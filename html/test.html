@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<style type="text/css">
+/*  body {
+  	position:relative;
+  	width:100%;
+  	heigh:100%;
+  }*/
+	div#wrapper {
+		position:absolute;
+		padding:0;
+		top:60px;
+		left:0px;
+		width:840px;
+		height:100px;
+		outline:1px solid red;
+		overflow:hidden;
+		transition:left 1s;
+	}
+	div.box {
+		width:100px;
+		height:100px;
+		background:pink;
+		display:inline-block;
+		/*float:left;*/
+		margin:0 2px 0 2px;
+		outline:1px solid blue;
+	}
+
+	div
+</style>
+</head>
+
+<body>
+
+<input type="button" id="btnToLeft" value="<<">
+<input type="button" id="btnToRight" value=">>">
+<div id="wrapper">
+	<div class="box">111</div>
+	<div class="box">222</div>
+	<div class="box">333</div>
+	<div class="box">444</div>
+	<div class="box">555</div>
+	<div class="box">666</div>
+	<div class="box">777</div>
+	<div class="box">888</div>
+	<div class="box">999</div>
+</div>  
+<script type="text/javascript">
+	function $id(id){
+		return document.getElementById(id)
+	}
+	var index = 0;
+
+	function toRight(){
+		index ++;
+		$id("wrapper").style.left= (-1) * 104 * index + "px";
+		console.log( $id("wrapper").style.top );
+	}
+
+	function toLeft(){
+		index --;
+		$id("wrapper").style.left= (-1) * 104 * index + "px";
+		console.log( $id("wrapper").style.top );
+	}
+	window.onload = function (){
+		$id("btnToRight").onclick = toRight;
+		$id("btnToLeft").onclick = toLeft;
+	}
+</script>
+</body>
+</html>

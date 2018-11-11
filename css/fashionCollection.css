@@ -1,0 +1,2397 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* outline: 1px solid red; */
+}
+
+body{
+	/* font-family:cbutlerregular,serif; */
+	font-family: 'Open Sans', sans-serif;
+}
+
+img{
+	width: 100%;
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+a{
+	/* font-size: 30px; */
+	text-decoration: black; 			
+	color: grey;
+	cursor: pointer;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1920px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.container{
+	max-width: 1920px;
+}
+
+
+/*********************************
+3. Header
+*********************************/
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #FFFFFF;
+	z-index: 100;
+	padding-left: 60px;
+	padding-right: 64px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.header.scrolled
+{
+	height: 80px;
+}
+.header_inner
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*********************************
+3.1 Header - Logo
+*********************************/
+
+.logo a
+{
+	/* font-family: 'Lucida', serif; */
+	font-size: 30px;
+	color: #2f2f2f;
+}
+
+/*********************************
+3.2 Header - Main Navigation
+*********************************/
+
+.main_nav
+{
+	padding-left: 252px;
+	-webkit-transform: translateY(4px);
+	-moz-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	-o-transform: translateY(4px);
+	transform: translateY(4px);
+}
+.main_nav ul li
+{
+	display: inline-block;
+	margin-right: 50px;
+}
+.main_nav ul li:last-child
+{
+	margin-right: 0;
+}
+.main_nav ul li a
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2f2f2f;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.main_nav ul li a:hover
+{
+	color: #937c6f;
+}
+
+/*********************************
+3.3 Header - Search
+*********************************/
+
+.search
+{
+	display: inline-block;
+	width: 400px;
+	-webkit-transform: translateY(2px);
+	-moz-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-o-transform: translateY(2px);
+	transform: translateY(2px);
+}
+.search_input
+{
+	width: 100%;
+	height: 43px;
+	background: #f9f5f5;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+}
+.search_button
+{
+	position: absolute;
+	top: 45%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 10px;
+	width: 19px;
+	height: 19px;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.search_button:focus
+{
+	outline: none !important;
+}
+.search_button img
+{
+	max-width: 100%;
+}
+
+/*********************************
+3.4 Header - Shopping
+*********************************/
+
+.shopping
+{
+	display: inline-block;
+	margin-left: 111px;
+	padding-right: 161px;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+.shopping a
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+.shopping a:last-child
+{
+	margin-right: 0;
+}
+.cart_num_container,
+.star_num_container
+{
+	position: absolute;
+	top: 13px;
+	left: -5px;
+	width: 15px;
+	height: 15px;
+	background: #937c6f;
+	border-radius: 50%;
+}
+.cart_num_inner,
+.star_num_inner
+{
+	width: 100%;
+	height: 100%;
+}
+.cart_num,
+.star_num
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 9px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+.star img
+{
+	width: 20px;
+	height: 20px;
+}
+.avatar img
+{
+	width: 20px;
+	height: 20px;
+}
+
+/*********************************
+3.5 Header - Burger
+*********************************/
+
+.burger_container
+{
+	position: absolute;
+	top: calc(50% + 4px);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 66px;
+	width: 22px;
+	height: 16px;
+	cursor: pointer;
+}
+.burger_container div
+{
+	width: 100%;
+	height: 2px;
+	background: #232323;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	pointer-events: none;
+}
+.burger_container:hover div
+{
+	background: #937c6f;
+}
+
+/*********************************
+5. Menu
+*********************************/
+
+.menu
+{
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 400px;
+	height: 100vh;
+	background: #FFFFFF;
+	z-index: 101;
+	padding-right: 60px;
+	padding-top: 87px;
+	padding-left: 50px;
+	transition: 0.3s
+}
+.menu.active
+{
+	right: 0;
+}
+.menu_close_container
+{
+	position: absolute;
+	top: 30px;
+	right: 60px;
+	width: 18px;
+	height: 18px;
+	transform-origin: center center;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.menu_close
+{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3D;
+}
+.menu_close div
+{
+	width: 100%;
+	height: 2px;
+	background: #232323;
+	top: 8px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.menu_close div:last-of-type
+{
+	-webkit-transform: rotate(90deg) translateX(-2px);
+	-moz-transform: rotate(90deg) translateX(-2px);
+	-ms-transform: rotate(90deg) translateX(-2px);
+	-o-transform: rotate(90deg) translateX(-2px);
+	transform: rotate(90deg) translateX(-2px);
+	transform-origin: center;
+}
+.menu_close:hover div
+{
+	background: #937c6f;
+}
+.menu .logo
+{
+	margin-bottom: 60px;
+}
+.menu_nav ul li
+{
+	margin-bottom: 11px;
+}
+.menu_nav ul li a
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2f2f2f;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.menu_nav ul li a:hover
+{
+	color: #937c6f;
+}
+.menu .search
+{
+	width: 100%;
+	margin-bottom: 67px;
+}
+
+/* .........collectionBg........ */
+
+.collectionBg{
+	position: relative;
+}
+
+/* .........discover..........*/
+
+.discover{
+	width: 50%;
+	transform:rotate(270deg);
+	margin-left: -350px;
+	margin-top: 100px;
+}
+
+.discoverText{
+	display: inline-block;
+	font-size: 40px;
+	color: grey;
+	margin: 0 30px;
+}
+
+.discoverLine{
+	width: 36%;
+	display: block;
+	margin: 10px 0;
+	display: inline-block;
+	border-top: 2px solid grey;
+}
+
+.collectionBg h1{
+	font-size:1200%;
+	color: white;
+	line-height: 95px;
+	position: absolute;
+	top: -6%;
+	bottom: 0;
+	margin-top: 35%;
+	right: 4%;
+	text-indent: -21px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+
+.summer{
+	font-size: 200px;
+	display: block;
+	text-indent: 45px;
+	margin-top: 42px;
+}
+
+/*..........collectionBox........*/
+
+.collectionBox{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 200px 0;
+}
+
+.boxImg{
+	width: 35%;
+	/* padding: 100px; */
+}
+
+/*..........aboutcollection........*/
+
+.aboutCollection{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.aboutImg{
+	width: 45%;
+}
+
+.collectionWords{
+	width: 46%;
+	align-self: center;
+	transform:scale(0.9);
+	margin: 0 auto;
+	margin-left: -100px;
+	background-color: white;
+	box-shadow: 1px 5px 100px;
+	text-align: center;
+	padding: 90px 50px; 
+}
+
+.collectionWords h1{
+	font-size: 50px;
+  	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-align: center;
+}
+
+.collectionWords p{
+	font-size: 24px;
+	line-height: 40px;
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-align: center;
+	color: grey;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*..........aboutSecondImg.........*/
+
+.aboutSecondImg{
+	width: 60%;
+	margin-left: 770px;
+	margin-top: 0;
+}
+
+/*..........aboutThirdImg.......*/
+
+.aboutThirdImg{
+	width: 100%;
+	position: relative;
+}
+
+.thirdImgWords{
+	position: absolute;
+	width: 50%;
+	margin-top: 525px;
+	margin-left: 700px;
+	padding: 100px 120px;
+	background-color: white;
+	box-shadow: 1px 5px 100px;
+	z-index: 2;
+}
+
+
+.thirdImg{
+	width: 45%;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.thirdImgWords h1{
+	font-size: 50px;
+	font-weight: 600;
+	text-indent: -43px;
+	line-height: 10px;
+}
+
+.thirdImgWords span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+
+.thirdImgWords p{
+	padding: 5px 0;
+	font-size: 24px;
+	line-height: 40px;
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-align: left;
+	color: gray;
+	font-weight: normal;
+}
+
+/*.........shopTheCollection........*/
+
+.shopTheCollection{
+	width: 100%;
+	margin: 150px 0;
+	margin-left: 200px;
+}
+
+.shopTitle{
+	width: 100%;
+	margin:  140px 0;
+}
+
+.shopTitle span{
+	font-size: 60px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+.shopLineText{
+	display: inline-block;
+}
+
+.shopLine{
+	width: 40%;
+	display: inline-block;
+	margin: 10px 0;
+	border-bottom: 1px solid lightgrey;
+}
+
+.shopBox{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.shopBoxInfo{
+	width: 31%;
+	margin: 0 13px;
+}
+
+.shopBoxImg{
+	width: 100%;
+}
+
+.boxInfo{
+	width: 100%;
+	text-align: center;
+	margin:  40px 0;
+}
+
+.boxInfo a{
+	line-height: 30px;
+	font-size: 25px; 
+	text-decoration: none !important;
+	color: black !important;
+}
+
+.type{
+	color: grey;
+}
+
+/*.........fullCollection........*/
+
+.fullCollection{
+	width: 100%;
+	text-align: center;
+}
+
+.collectionLine{
+	display:block;
+	width: 25%;
+	border-top: 2px solid lightgrey;
+	margin:  0 auto;
+	padding: 7px 0;
+	opacity: 0.5;
+}
+
+.collectionLine2{
+	display:block;
+	width: 25%;
+	border-bottom: 2px solid lightgrey;
+	margin:  0 auto;
+	padding: 7px 0;
+	opacity: 0.5;
+}
+
+.collectionText{
+	font-size: 35px;
+	font-weight: 200;
+	padding: 10px 0;
+}
+
+/*........ourIdentityBigGp.........*/
+
+.ourIdentityBigGp{
+	background-color: #efebe9;
+	display: flex;
+	color: grey;
+	padding:  190px 110px;
+	margin-top: 510px;
+	margin-bottom: 0;
+}
+
+.ourIdentityBox1{
+	width: 30%;
+}
+
+.ourIdentityBox{
+	width: 100%;
+	display: flex;
+}
+
+/*........identityGp........*/
+
+.identityGp{
+  width: 50%;
+}
+
+/*........identity.........*/
+
+.identity{
+  width: 100%;
+}
+
+.line{
+  display: block;
+  width: 10%;
+  padding: 5px 0;
+  margin-left: -45px;
+  border-top: 2px solid grey;
+}
+
+.identity span{
+	font-size: 27px;
+}
+
+.identityText{
+	margin-left: 29px;
+}
+
+/* ...............behindTheBrand....... */
+
+.behindTheBrand{
+	width: 100%;
+	padding: 70px 0;
+}
+
+.behindTheBrand h3{
+	font-size: 60px;
+}
+
+.behindTheBrand span{
+	display: block;
+	text-indent: 80px;
+	font-size: 60px;
+}
+
+.identityGp p{
+	width: 80%;
+	margin-left: 85px;
+	line-height: 48px;
+	padding-bottom: 45px;
+	text-align: left;
+}
+
+.identityGp a{
+	margin-left: 85px;
+}
+
+.BrandLine{
+	display: block;
+	width: 26%;
+	margin: 8px 0;
+	margin-left: -45px;
+	border-top: 2px solid grey;
+}
+
+/* ........identityImg..... */
+
+.identityImg{
+	width: 70%;
+	align-self: center;
+}
+
+
+/*********************************
+12. Footer
+*********************************/
+
+.footer
+{
+	padding-top: 80px;
+	margin-top: 180px;
+}
+.footer_logo a
+{
+	/* font-family: 'Lucida', serif; */
+	font-size: 60px;
+	color: #232323;
+}
+.footer_nav
+{
+	margin-top: 14px;
+}
+.footer_nav ul li
+{
+	display: inline-block;
+	margin-right: 53px;
+}
+.footer_nav ul li:last-child
+{
+	margin-right: 0;
+}
+.footer_nav ul li a
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #232323;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.footer_nav ul li a:hover
+{
+	color: #937c6f;
+}
+.footer_social
+{
+	margin-top: 51px;
+}
+.footer_social ul li
+{
+	display: inline-block;
+	margin-right: 36px;
+}
+.footer_social ul li:last-child
+{
+	margin-right: 0;
+}
+.footer_social ul li a i
+{
+	font-size: 24px;
+	color: #937c6f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.footer_social ul li a i:hover
+{
+	color: #e0e3e4;
+}
+.copyright
+{
+	margin-top: 56px;
+	padding-bottom: 13px;
+	/* font-family: 'Lucida', serif; */
+	font-size: 12px;
+	color: #232323;
+}
+
+
+/* @media only screen and (min-width: 1500px)
+   and (max-width: 1919px){ */
+	@media screen and (min-width: 1500px) and 
+	(max-width: 1919px){
+
+	/* .........discover..........*/
+
+	.discover{
+		width: 52%;
+		margin-left: -330px;
+	}
+
+	.collectionBox{
+		margin-top: 80px;
+		margin-bottom: 200px;
+	}
+
+	.collectionWords p{
+		font-size: 24px;
+		line-height: 43px;
+	}
+
+	.thirdImgWords{
+		position: absolute;
+		width: 50%;
+		margin-top: 410px;
+		margin-left: 560px;
+		padding: 0 120px;
+		padding-top: 85px;
+		padding-bottom: 25px;
+		background-color: white;
+		box-shadow: 1px 5px 100px;
+	}
+
+}
+
+/* @media only screen and (min-width: 1200px)
+   and (max-width: 15000px){ */
+	@media screen and (min-width: 1200px) and 
+	(max-width: 1500px){
+	/* .........collectionBg........ */
+
+	.collectionBg{
+		position: relative;
+	}
+
+	/* .........discover..........*/
+
+	.discover{
+		width: 45%;
+		margin-left: -200px;
+	}
+
+	.discoverText{
+		font-size: 25px;
+		
+	}
+
+	.collectionBg h1{
+		font-size:800%;
+	}
+
+
+	.summer{
+		font-size: 127px;
+		margin-top: 0;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 76px;
+		margin-bottom: 200px;
+	}
+
+	/*..........aboutcollection........*/
+	
+	.collectionWords{
+		padding: 50px 70px; 
+	}
+
+	.collectionWords h1{
+		font-size: 36px;
+	}
+
+	.collectionWords p{
+		margin-top: 10px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+
+	.productIntro p{
+		font-size: 20px;
+	}
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 55%;
+		margin-left: 540px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImgWords{
+		padding: 70px 80px;
+		margin-left: 400px;
+		margin-top: 350px;
+	}
+
+	.thirdImgWords h1{
+		font-size: 40px;
+		text-indent: -43px;
+		line-height: 10px;
+	}
+
+	.thirdImgWords span{
+		font-size: 40px; 
+	}
+
+
+	.thirdImgWords p{
+		/* padding: 10px 0; */
+		font-size: 15px;
+		margin-top: 10px;
+		text-align: left;
+		line-height: 30px;
+		margin-bottom: 0;
+	}
+
+	/*.........shopTheCollection........*/
+
+	.boxInfo{
+		width: 100%;
+		text-align: center;
+		margin:  30px 0;
+	}
+
+	.boxInfo a{
+		line-height: 40px;
+	}
+
+	.boxInfo a{
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	/*..............shopBox...........*/
+
+	.shopBox{
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.shopBoxInfo{
+		width: 25%;
+		margin: 0 13px;
+	}
+
+	.boxInfo a{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		background-color: #efebe9;
+		display: flex;
+		color: grey;
+		padding:  150px 100px;
+		margin-top: 300px;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.identityGp{
+	  width: 100%;
+	  padding-top: 50px;
+	  padding-bottom: 200px;
+	  margin-left: 35px;
+	}
+
+	.identity span{
+		font-size: 35px;
+	}
+
+	.identityGp p{
+		width: 80%;
+		margin-left: 85px;
+		line-height: 48px;
+		padding-bottom: 45px;
+		text-align: left;
+		font-size: 31px;
+	}
+
+	.identityGp a{
+		margin-left: 85px;
+		font-size: 35px;
+	}
+
+	/* ...............behindTheBrand....... */
+
+	.BrandLine{
+		display: block;
+		width: 20%;
+		margin: 3px 0;
+		margin-left: -45px;
+		border-top: 2px solid grey;
+	}
+
+	/*...............identityImg............ */
+
+	.identityImg{
+		width: 100%;
+		/* align-self: center; */
+	}
+
+	/*...............footer............ */
+
+	.footer{
+		margin-top: 10px;
+	}
+}
+
+/* @media only screen and (min-width: 1200px)
+   and (max-width: 15000px){ */
+	@media screen and (min-width: 1024px) and 
+	(max-width: 1200px){
+	
+	/* .........discover..........*/
+
+	.discover{
+		width: 75%;
+		margin-top: 50px;
+		margin-left: -300px;
+	}
+
+	.discoverText{
+		font-size: 28px;
+		
+	}
+
+	.collectionBg h1{
+		font-size: 730%;
+		bottom: 0;
+	}
+
+	.summer{
+		font-size: 120px;
+		margin-top: -10px;
+		text-indent: 21px;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 100px;
+		margin-bottom: 200px;
+	}
+
+	/*..........aboutcollection........*/
+	
+	.collectionWords{
+		padding: 70px 50px; 
+	}
+
+	.collectionWords h1{
+		font-size: 310%;
+	}
+
+	.collectionWords p{
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 55%;
+		margin-left: 460px;
+	}
+
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImgWords{
+		padding: 0 80px;
+		padding-top: 57px;
+		padding-bottom: 35px;
+		margin-left: 400px;
+		margin-top: 200px;
+	}
+
+	.thirdImgWords h1{
+	font-size: 40px;
+	text-indent: -43px;
+	line-height: 10px;
+	}
+
+	.thirdImgWords span{
+		font-size: 40px; 
+	}
+
+
+	.thirdImgWords p{
+		/* padding: 10px 0; */
+		font-size: 19px;
+		text-align: left;
+		line-height: 28px;
+		margin-bottom: 0;
+	}
+
+
+
+	/*.........shopTheCollection........*/
+
+	.shopTheCollection{
+		margin-top: 280px;
+		margin-bottom: 120px;
+	}
+
+	.boxInfo{
+		width: 100%;
+		text-align: center;
+		margin:  30px 0;
+	}
+
+	.boxInfo a{
+		line-height: 40px;
+	}
+
+	/*..............shopBox...........*/
+
+	.shopBox{
+		width: 70%;
+	}
+
+	.shopBoxInfo{
+		width: 25%;
+
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		padding:  150px 100px;
+		margin-top: 300px;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.identityGp{
+	  width: 100%;
+	  padding-top: 50px;
+	  padding-bottom: 100px;
+	  margin-left: 35px;
+	}
+
+	.identity span{
+		font-size: 35px;
+	}
+
+	.identityGp p{
+		width: 80%;
+		margin-left: 85px;
+		line-height: 48px;
+		padding-bottom: 45px;
+		text-align: left;
+		font-size: 31px;
+	}
+
+	.identityGp a{
+		margin-left: 85px;
+		font-size: 35px;
+	}
+
+	/* ...............behindTheBrand....... */
+
+	.BrandLine{
+		width: 20%;
+		margin: 3px 0;
+	}
+
+	/*...............identityImg............ */
+
+	.identityImg{
+		width: 110%;
+	}
+
+	/*...............footer........... */
+
+	.footer{
+		margin-top: 40px;
+	}
+}
+/* @media only screen and (min-width: 992px)
+   and (max-width: 1025px){ */
+	@media screen and (min-width: 992px) and 
+	(max-width: 1025px){
+	
+	/* .........discover..........*/
+
+	.discover{
+		width: 60%;
+		margin-left: -230px;
+	}
+
+	.discoverText{
+		font-size: 28px;
+		
+	}
+
+	.collectionBg h1{
+		font-size:800%;
+	}
+
+
+	.summer{
+		font-size: 127px;
+		margin-top: 0;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 76px;
+		margin-bottom: 200px;
+	}
+
+	/*..........aboutcollection........*/
+	
+	.collectionWords{
+		padding: 50px 50px; 
+	}
+
+	.collectionWords h1{
+		font-size: 30px;
+	}
+
+	.collectionWords p{
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 55%;
+		margin-left: 448px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+ 	.thirdImgWords{
+		padding: 60px 80px;
+		padding-top: 75px;
+		padding-bottom: 50px;
+		margin-left: 400px;
+		margin-top: 200px;
+	}
+
+	.thirdImgWords h1{
+		font-size: 30px;
+	}
+
+	.thirdImgWords span{
+		font-size: 30px;
+	}
+
+	.thirdImgWords p{
+		margin-top: 20px;
+		padding: 0;
+		font-size: 20px;
+		line-height: 35px;
+		text-align: left;
+	}
+
+	/*.........shopTheCollection........*/
+
+	.shopTheCollection{
+		margin-top: 120px;
+		margin-bottom: 120px;
+	}
+
+	.boxInfo{
+		width: 100%;
+		text-align: center;
+		margin:  30px 0;
+	}
+
+	.boxInfo a{
+		line-height: 30px;
+	}
+
+	/*..............shopBox...........*/
+
+	.shopBox{
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.shopBoxInfo{
+		width: 25%;
+		margin: 0 13px;
+	}
+
+	.boxInfo a{
+		font-size: 19px;
+	}
+
+	.boxInfo a{
+		line-height: 20px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		padding:  90px 100px;
+		margin-top: 300px 0;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.identityGp{
+	  width: 100%;
+	  padding-top: 50px;
+	  padding-bottom: 200px;
+	  margin-left: 35px;
+	}
+
+	.identity span{
+		font-size: 35px;
+	}
+
+	.identityGp p{
+		font-size: 31px;
+	}
+
+	.identityGp a{
+		font-size: 35px;
+	}
+
+	/*...............identityImg............ */
+
+	.identityImg{
+		width: 110%;
+	}
+
+	/*...............footer........... */
+	
+	.footer{
+		padding-top: 0;
+		margin-top: 80px;
+	}
+}
+
+/* @media only screen and (min-width: 768px)
+   and (max-width: 992px){ */
+	@media screen and (min-width: 768px) and 
+	(max-width: 992px){
+
+	/* .........discover..........*/
+
+	.discover{
+		width: 50%;
+		margin-top: 60px;
+		margin-left: -150px;
+	}
+
+	.discoverText{
+		font-size: 16px;
+		
+	}
+
+	.collectionBg h1{
+		font-size: 600%;
+	}
+
+	.summer{
+		font-size: 94px;
+		margin-top: -30px;
+		text-indent: 16px;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 76px;
+		margin-bottom: 200px;
+	}
+
+	/*..........aboutcollection........*/
+	
+	.collectionWords{
+		padding: 30px 50px; 
+	}
+
+	.collectionWords h1{
+		font-size: 240%;
+	}
+
+	.collectionWords p{
+		margin-top: 20px;
+		margin-bottom: 0;
+		font-size: 17px;
+		line-height: 25px;
+	}
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 55%;
+		margin-left: 345px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImgWords{
+		padding: 0 73px;
+		padding-top: 45px;
+		padding-bottom: 15px;
+		margin-left: 270px;
+		margin-top: 80px;
+	}
+
+	.thirdImgWords h1{
+		font-size: 35px;
+	}
+
+	.thirdImgWords span{
+		font-size: 35px;
+	}
+
+	.thirdImgWords p{
+		margin-top: 0;
+		padding: 10px 0;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: left;
+	}
+
+	/*.........shopTheCollection........*/
+
+	.shopTheCollection{
+		margin-top: 280px;
+		margin-bottom: 120px;
+		margin-left: 70px;
+	
+	}/*..............shopBox...........*/
+
+	.shopBox{
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.shopTitle span{
+		font-size: 49px;
+	}
+
+	.shopLine{
+		width: 34%;
+		margin: 10px 12px;
+	}
+
+	.shopBoxInfo{
+		width: 35%;
+		margin: 0 13px;
+	}
+	
+	.item{
+		font-size: 23px;
+	}
+	
+	.type{
+		font-size: 21px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		padding:  70px 100px;
+		margin-top: 250px;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.identityGp{
+	  width: 100%;
+	  padding-top: 50px;
+	  padding-bottom: 200px;
+	  margin-left: 35px;
+	}
+
+	.identity span{
+		font-size: 35px;
+	}
+
+	.identityGp p{
+		font-size: 31px;
+	}
+
+	.identityGp a{
+		font-size: 35px;
+	}
+
+	/*...............identityImg............ */
+
+	.identityImg{
+		width: 130%;
+	}
+
+	/*...............footer............ */
+
+	.footer{
+		padding-top: 0;
+		margin-top: 80px;
+	}
+}
+
+/* @media only screen and (min-width: 576px)
+   and (max-width: 769px){ */
+	@media screen and (min-width: 576px) and 
+	(max-width: 769px){
+
+	/* .........discover..........*/
+
+	.discover{
+		width: 63%;
+		margin-top: 57px;
+		margin-left: -185px;
+	}
+
+	.discoverText{
+		font-size: 15px;
+		
+	}
+
+	.collectionBg h1{
+		font-size: 420%;
+	}
+
+	.summer{
+		font-size: 70px;
+		margin-top: -50px;
+		text-indent: 4px;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 0;
+		margin-bottom: 130px;
+	}
+
+
+	/*..........aboutcollection........*/
+	
+	.collectionWords{
+		padding: 35px 40px;
+		margin-left: -30px; 
+	}
+
+	.collectionWords h1{
+		font-size: 150%;
+		margin-top: 10px;
+	}
+
+	.collectionWords p{
+		margin-top: 13px;
+		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 55%;
+		margin-left: 260px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImg{
+		margin-left: 0;
+	}
+
+
+	.thirdImgWords{
+		padding: 35px 60px;
+		width: 50%;
+		padding-top: 45px;
+		padding-bottom: 15px;
+		margin-left: 230px;
+		margin-top: 80px;
+	}
+
+	.thirdImgWords h1{
+		font-size: 35px;
+	}
+
+	.thirdImgWords span{
+		font-size: 35px;
+	}
+
+	.thirdImgWords p{
+		padding: 10px 0;
+		font-size: 13px;
+		line-height: 22px;
+		text-align: left;
+	}
+
+	/*.........shopTheCollection........*/
+
+	.shopTheCollection{
+		margin-top: 120px;
+		margin-bottom: 120px;
+		margin-left: 40px;
+	}
+
+	/*..............shopBox...........*/
+
+	.shopBox{
+		width: 90%;
+	}
+
+	.shopTitle span{
+		font-size: 43px;
+	}
+
+	.shopLine{
+		width: 34%;
+		margin: 10px 12px;
+	}
+
+	.boxInfo{
+		margin:  25px 0;
+	}
+
+	.boxInfo a{
+		line-height: 5px;
+	}
+
+	.item{
+		font-size: 20px;
+	}
+	
+	.type{
+		font-size: 18px;
+	}
+
+	/*.............fullCollection...........*/
+
+	.fullCollection{
+
+	}
+
+	.collectionLine{
+		width: 50%;
+		padding: 5px;
+	}
+
+	.collectionText{
+		font-size: 25px;
+		padding: 0;
+	}
+
+	.collectionLine2{
+		width: 50%;
+		padding: 5px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		padding:  50px 100px;
+		margin-top: 150px;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.line{
+		width: 20%;
+	}
+
+	.identityGp{
+	  width: 100%;
+	  padding-top: 50px;
+	  padding-bottom: 200px;
+	  margin-left: 35px;
+	}
+
+	.identity span{
+		font-size: 28px;
+	}
+
+	.identityText{
+		margin-left: 34px;
+	}
+
+	.identityGp{
+		margin-left: 0;
+		padding-bottom: 50px;
+	}
+
+	.identityGp p{
+		font-size: 19px;
+		line-height: 33px;
+	}
+
+	.identityGp a{
+		font-size: 35px;
+	}
+
+	.BrandLine{
+		display: block;
+		width: 39%;
+		margin: 5px;
+		margin-left: 9px;
+		border-top: 2px solid grey;
+	}
+
+	.behindTheBrand h3{
+		font-size: 50px;
+	}
+
+	.behindTheBrand span{
+		font-size: 50px;
+		margin-top: -15px;
+	}
+
+	/*...............identityImg............ */
+
+	.identityImg{
+		width: 140%;
+	}
+
+	/*...............identityImg............ */
+	
+	.footer{
+		padding-top: 0;
+		margin-top: 80px;
+	}
+}
+
+/*	@media only screen and (min-width: 414px)
+	and (max-width: 576px){ */
+	@media screen and (min-width: 414px) and 
+	(max-width: 576px){
+	
+	/* .........discover..........*/
+
+	.discover{
+		width: 85%;
+		margin-top: 50px;
+		margin-left: -150px;
+	}
+
+	.discoverText{
+		font-size: 14px;
+		
+	}
+
+	.collectionBg h1{
+		font-size: 340%;
+	}
+
+	.summer{
+		font-size: 53px;
+		margin-top: -59px;
+		text-indent: 4px;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 0;
+		margin-bottom: 130px;
+	}
+
+	/*..........aboutcollection........*/
+
+	.aboutCollection{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	
+	.collectionWords{
+		width: 90%;
+		margin: 0;
+		margin-top: -40px;
+		margin-bottom: 70px ; 
+		padding: 30px 30px;
+	}
+
+	.collectionWords h1{
+		font-size: 150%;
+		margin-top: 10px;
+	}
+
+	.collectionWords p{
+		margin: 20px 30px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.aboutImg{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImgWords{
+		width: 90%;
+		position: static;
+		margin: 0 auto;
+		padding: 65px 65px;
+	}
+
+	.thirdImgWords span,
+	.thirdImgWords h1{
+		font-size: 40px;
+	}
+
+	.thirdImgWords p{
+		padding-top: 13px;
+		padding-bottom: 0;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	.thirdImg{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	/*.........shopTheCollection........*/
+
+	.shopTheCollection{
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+
+	.shopTitle{
+		margin-top:  80px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.shopTitle span{
+		font-size: 43px;
+		margin: 0 auto;
+	}
+
+	.shopLine{
+		width: 70%;
+		display: inline-block;
+		margin: 10px 0;
+		border-bottom: 1px solid lightgrey;
+	}
+
+	.shopBox{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+
+	.shopBoxInfo{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/*.........fullCollection........*/
+
+	.fullCollection{
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.collectionLine{
+		width: 60%;
+		padding: 3px 0;
+	}
+
+	.collectionLine2{
+		width: 60%;
+		padding: 3px 0;
+	}
+
+	.collectionText{
+		font-size: 26px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		padding:  190px 20px;
+		margin-top: 160px;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.identityGp{
+	  width: 100%;
+	}
+
+	/*........identity.........*/
+	
+	.line{
+	  display: block;
+	  width: 20%;
+	  padding: 5px 0;
+	  margin-left: 4px;
+	  border-top: 2px solid grey;
+	}
+
+	.identity span{
+		font-size: 23px;
+	}
+
+	.identityText{
+		margin-left: 45px;
+	}
+
+	/* ...............behindTheBrand....... */
+
+	.behindTheBrand h3{
+		font-size: 40px;
+	}
+
+	.behindTheBrand span{
+		font-size: 40px;
+	}
+
+	.identityGp p{
+		width: 70%;
+		line-height: 34px;
+		font-size: 20px;
+	}
+
+	.BrandLine{
+		width: 35%;
+		margin-top: -1px;
+		margin-bottom: 20px;
+		margin-left: 18px;
+	}
+
+	/* ........identityImg..... */
+
+	.identityImg{
+		width: 100%;
+		
+	}
+
+	.footer{
+		padding-top: 0;
+		margin-top: 60px;
+	}
+}
+
+/*  @media only screen and (min-width: 320px)
+	and (max-width: 375px){ */
+	@media screen and (min-width: 320px) and 
+	(max-width: 414px){
+
+	.burger_container{
+		margin-right: -45px;
+	}
+
+	/* .........discover..........*/
+
+	.discover{
+		width: 100%;
+		margin-top: 50px;
+		margin-left: -175px;
+	}
+
+	.discoverText{
+		font-size: 13px;
+		
+	}
+
+	.collectionBg h1{
+		font-size: 270%;
+		top: -12%;
+	}
+
+	.summer{
+		font-size: 44px;
+		margin-top: -65px;
+		text-indent: -3px;
+	}
+
+	/*..........collectionBox........*/
+
+	.collectionBox{
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+
+	/*..........aboutcollection........*/
+
+	.aboutCollection{
+		flex-direction: column-reverse;
+	}
+
+	.collectionWords{
+		font-size: 25px;
+		width: 85%;
+		margin: 0;
+		margin-bottom: 70px ; 
+		padding: 40px 10px;
+		box-shadow: 1px 1px 19px;
+	}
+
+	.collectionWords h1{
+		font-size: 25px;
+		margin-top: 10px;
+	}
+
+	.collectionWords p{
+		margin: 0;
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.aboutImg{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	/*..........aboutSecondImg.........*/
+
+	.aboutSecondImg{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImgWords{
+		width: 100%;
+		position: static;
+	}
+
+	.thirdImg{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+
+	/*..........aboutThirdImg.......*/
+
+	.thirdImgWords{
+		margin-left: 0;
+		margin-top: 0;
+		padding: 0 60px;
+		padding-top: 50px;
+		padding-bottom: 30px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.thirdImgWords span{
+		font-size: 30px;
+	}
+
+	.thirdImgWords h1{
+		font-size: 30px;
+	}
+
+	.thirdImgWords p{
+		padding-top: 5px;
+		padding-bottom: 0;
+		margin-top: 8px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	/*.........shopTheCollection........*/
+
+	.shopTheCollection{
+		margin: 0 auto;
+	}
+
+	.shopTitle{
+		margin-top:  80px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.shopTitle span{
+		font-size: 35px;
+		margin: 0 auto;
+	}
+
+	.shopLine{
+		width: 70%;
+		display: inline-block;
+		margin: 10px 0;
+		border-bottom: 1px solid lightgrey;
+	}
+
+	.shopBox{
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+
+	.shopBoxInfo{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/*.........fullCollection........*/
+
+	.fullCollection{
+		margin-top: 10px;
+	}
+
+
+
+	.collectionLine2,.collectionLine{
+		width: 65%;
+		padding: 3px 0;
+	}
+
+	.collectionText{
+		font-size: 21px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		padding:  70px 40px;
+		margin-top: 100px;
+		margin-bottom: 0;
+	}
+
+	.ourIdentityBox{
+		flex-direction: column;
+	}
+
+	/*........identityGp........*/
+
+	.identityGp{
+	  width: 100%;
+	  margin-left: -10px;
+	}
+
+	.identityGp a{
+	  margin-left: 30px;
+	}
+
+	/*........identity.........*/
+	
+	.line{
+	  display: block;
+	  width: 20%;
+	  padding: 5px 0;
+	  margin-left: 4px;
+	  border-top: 2px solid grey;
+	}
+
+	.identity span{
+		font-size: 19px;
+	}
+
+	.identityText{
+		margin-left: 45px;
+	}
+
+	/* ...............behindTheBrand....... */
+
+	.behindTheBrand{
+		padding: 30px 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 33px;
+	}
+
+	.behindTheBrand span{
+		font-size: 33px;
+		text-indent: 57px;
+	}
+
+	.identityGp p{
+		width: 74%;
+		line-height: 28px;
+		font-size: 17px;
+		margin-left: 60px;
+	}
+
+	.BrandLine{
+		width: 40%;
+		margin-top: 4px;
+		margin-bottom: 40px;
+		margin-left: -10px;
+	}
+
+	/* ........identityImg..... */
+
+	.identityImg{
+		width: 125%;
+		
+	}
+
+	/* .........footer..... */
+
+	.footer{
+		padding-top: 0;
+		margin-top: 40px;
+	}
+}
+
+/*  @media only screen and (min-width: 320px)
+	and (max-width: 376px){ */
+	@media screen and (min-width: 320px) and 
+	(max-width: 376px){
+	
+	.discover{
+		width: 100%;
+		margin-top: 50px;
+		margin-left: -155px;
+	}
+
+	.boxInfo a{
+		font-size: 25px;
+	}
+
+	.boxInfo a{
+		line-height: 30px;
+	}
+
+/* @media screen and (max-width: 320px)  */
+	@media screen and (max-width: 321px) {
+
+	.discover{
+		width: 103%;
+		margin-top: 50px;
+		margin-left: -135px;
+	}
+
+	.collectionWords h1{
+		font-size: 20px;
+	}
+
+	.collectionWords p{
+		margin-top: 13px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.shopTitle span{
+		font-size: 30px;
+	}
+
+	.boxInfo a{
+		font-size: 18px;
+		line-height: 10px;
+	}
+
+	.collectionText{
+		font-size: 16px;
+	}
+
+	.footer_logo a{
+		font-size: 35px;
+	}
+}
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

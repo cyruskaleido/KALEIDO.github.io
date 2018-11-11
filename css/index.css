@@ -1,0 +1,3312 @@
+*{
+	/* outline: 1px solid red; */
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	width: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+p{
+	font-size: 28px;
+	/* font-family:'Times New Roman', Times, serif; */
+	/* font-family: 'Lucida', serif; */
+	/* line-height: 50px; */
+}
+
+/* span{
+	display: block;
+	font-size: 25px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight:normal;
+} */
+
+h1{
+	/* font-size: 160px; */
+	/* font-family: 'Times New Roman', Times, serif; */
+	letter-spacing: 10px;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 100px;
+	/* font-family: 'Times New Roman', Times, serif; */
+	letter-spacing: 10px;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: 60px;
+	/* font-family: 'Times New Roman', Times, serif; */
+	letter-spacing: 2px;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+	/* color: white; */
+	/* font-size: 25px; */
+	cursor: pointer;
+	/* font-family:'Lucida', serif; */
+	/* font-family: 'Times New Roman', Times, serif; */
+}
+
+
+
+/*..........container...........*/
+
+.wrapper{
+	width: 100%;
+	max-width: 1920px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.menu{
+	background-color: black;
+	opacity: 0.9;
+}
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #FFFFFF;
+	z-index: 100;
+	padding-left: 60px;
+	padding-right: 64px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.header.scrolled
+{
+	height: 80px;
+}
+.header_inner
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*********************************
+3.1 Header - Logo
+*********************************/
+
+.logo a
+{
+	/* font-family: 'Lucida', serif; */
+	font-size: 30px;
+	color: #2f2f2f;
+	margin-left: -20px;
+}
+
+/*********************************
+3.2 Header - Main Navigation
+*********************************/
+
+.main_nav
+{
+	padding-left: 252px;
+	-webkit-transform: translateY(4px);
+	-moz-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	-o-transform: translateY(4px);
+	transform: translateY(4px);
+}
+.main_nav ul li
+{
+	display: inline-block;
+	margin-right: 50px;
+}
+.main_nav ul li:last-child
+{
+	margin-right: 0;
+}
+.main_nav ul li a
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2f2f2f;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.main_nav ul li a:hover
+{
+	color: #937c6f;
+}
+
+/*********************************
+3.3 Header - Search
+*********************************/
+
+.search
+{
+	display: inline-block;
+	width: 400px;
+	-webkit-transform: translateY(2px);
+	-moz-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-o-transform: translateY(2px);
+	transform: translateY(2px);
+}
+.search_input
+{
+	width: 100%;
+	height: 43px;
+	background: #f9f5f5;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+}
+.search_button
+{
+	position: absolute;
+	top: 45%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 10px;
+	width: 19px;
+	height: 19px;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.search_button:focus
+{
+	outline: none !important;
+}
+.search_button img
+{
+	max-width: 100%;
+}
+
+/*********************************
+3.4 Header - Shopping
+*********************************/
+
+.shopping
+{
+	display: inline-block;
+	margin-left: 111px;
+	padding-right: 161px;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+.shopping a
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+.shopping a:last-child
+{
+	margin-right: 0;
+}
+.cart_num_container,
+.star_num_container
+{
+	position: absolute;
+	top: 13px;
+	left: -5px;
+	width: 15px;
+	height: 15px;
+	background: #937c6f;
+	border-radius: 50%;
+}
+.cart_num_inner,
+.star_num_inner
+{
+	width: 100%;
+	height: 100%;
+}
+.cart_num,
+.star_num
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 9px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+.star img
+{
+	width: 20px;
+	height: 20px;
+}
+.avatar img
+{
+	width: 20px;
+	height: 20px;
+}
+
+/*********************************
+3.5 Header - Burger
+*********************************/
+
+.burger_container
+{
+	position: absolute;
+	top: calc(50% + 4px);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 66px;
+	width: 22px;
+	height: 16px;
+	cursor: pointer;
+}
+.burger_container div
+{
+	width: 100%;
+	height: 2px;
+	background: #232323;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	pointer-events: none;
+}
+.burger_container:hover div
+{
+	background: #937c6f;
+}
+
+/*********************************
+4. Home
+*********************************/
+
+.home
+{
+	width: 100%;
+	height: 1100px;
+	background: #FFFFFF;
+}
+
+/*********************************
+4.1 Home Slider
+*********************************/
+
+.home_slider_container
+{
+	width: 100%;
+	height: 100%;
+}
+.home_slider_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center ;
+}
+.home_slider_content
+{
+	position: absolute;
+	top: 56.3%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 10;
+}
+.home_slider_content_inner
+{
+	background: #937c6f;
+}
+.home_slider_title
+{
+	font-family: 'Lucida', serif;
+	font-size: 72px;
+	color: #FFFFFF;
+	background-color: grey;
+	/* opacity: 0.6; */
+	height: 99px;
+	line-height: 99px;
+	padding-left: 31px;
+	padding-right: 19px;
+	white-space: nowrap;
+}
+.home_slider_subtitle
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: -37px;
+	height: 37px;
+	background: #2f2f2f;
+	color: #FFFFFF;
+	padding-left: 34px;
+	padding-right: 34px;
+	line-height: 37px;
+	font-family: 'Lucida', serif;
+	font-size: 18px;
+	white-space: nowrap;
+}
+
+/*********************************
+5. Menu
+*********************************/
+
+.menu
+{
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 400px;
+	height: 100vh;
+	background: #FFFFFF;
+	z-index: 101;
+	padding-right: 60px;
+	padding-top: 87px;
+	padding-left: 50px;
+	transition: 0.3s
+}
+.menu.active
+{
+	right: 0;
+}
+.menu_close_container
+{
+	position: absolute;
+	top: 30px;
+	right: 60px;
+	width: 18px;
+	height: 18px;
+	transform-origin: center center;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.menu_close
+{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3D;
+}
+.menu_close div
+{
+	width: 100%;
+	height: 2px;
+	background: #232323;
+	top: 8px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.menu_close div:last-of-type
+{
+	-webkit-transform: rotate(90deg) translateX(-2px);
+	-moz-transform: rotate(90deg) translateX(-2px);
+	-ms-transform: rotate(90deg) translateX(-2px);
+	-o-transform: rotate(90deg) translateX(-2px);
+	transform: rotate(90deg) translateX(-2px);
+	transform-origin: center;
+}
+.menu_close:hover div
+{
+	background: #937c6f;
+}
+.menu .logo
+{
+	margin-bottom: 60px;
+}
+.menu_nav ul li
+{
+	margin-bottom: 11px;
+}
+.menu_nav ul li a
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2f2f2f;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.menu_nav ul li a:hover
+{
+	color: #937c6f;
+}
+.menu .search
+{
+	width: 100%;
+	margin-bottom: 67px;
+}
+
+/* .home_slider_title h1
+{
+	font-size: 80px;
+}
+.home_slider_title span
+{
+	display: block;
+	font-size: 80px;
+} */
+
+/* .makeUpText{
+	position: absolute;
+	font-size: 33px;
+	letter-spacing: 3px;
+	color: white;
+} */
+
+/* .collectionText{
+	margin-top: 16%;
+	right: 60%;
+}
+
+.discoverText{
+	margin-top: 10%;
+	right: 58%;
+} */
+
+/*.........discoverLine..........*/
+
+/* .discoverLine{
+	position: absolute;
+	width: 28%;
+	display: inline-block;
+	margin: 88% 7%;
+	border-bottom: 2px solid white;
+} */
+.home_slider_next
+{
+	position: absolute;
+	top: 54%;
+	right: 60px;
+	width: 45px;
+	height: 45px;
+	background: #937c6f;
+	z-index: 10;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.home_slider_next:hover
+{
+	background: #2f2f2f;
+}
+.home_slider_dots_container
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.home_slider_dots
+{
+	display: inline-block;
+	position: absolute;
+	top: -54px;
+	left: 0;
+}
+.home_slider_dots ul
+{
+	display: inline-block;
+}
+.home_slider_dots ul li
+{
+	display: inline-block;
+	position: relative;
+	font-family: 'Lucida', serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-right: 7px;
+	cursor: pointer;
+}
+.home_slider_dots ul li:last-child
+{
+	margin-right: 0;
+}
+.home_slider_custom_dot div
+{
+	display: inline-block;
+	width: 0px;
+	height: 1px;
+	background: #FFFFFF;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	margin-left: 4px;
+	margin-right: -4px;
+}
+.home_slider_custom_dot.active div
+{
+	width: 100px;
+}
+.home_slider .owl-dots
+{
+	display: none !important;
+}
+
+
+
+/*.........makeUpBg..........*/
+
+  /* .makeUpBg{
+	height: 1100px;
+	width: 100%;
+	background-image: url("../image/website/makeup/1.jpeg");
+	background-size: 100%;
+	font-family: font-family: "Luna";
+	background-attachment: fixed;
+	display: table;
+	position: relative;
+} */
+
+/*.........makeUpBox..........*/
+
+/* .makeUpBox{
+	position: absolute;
+	width: 50%;
+	height: 900px;
+	right: 5%;
+	top: 15%;
+}
+
+.makeUpText{
+	position: absolute;
+	font-size: 33px;
+	letter-spacing: 3px;
+	color: white;
+}
+
+.collectionText{
+	margin-top: 16%;
+	right: 60%;
+}
+
+.discoverText{
+	margin-top: 80%;
+	right: 58%;
+} */
+
+/*..........makeUpWords..........*/
+
+/* .makeUpWords{
+	color: white;
+	position: absolute;
+	margin-top: 28%;
+	right: 6%;
+}
+
+.makeUpWords span{
+	letter-spacing: 3px;
+	font-size: 160px;
+	display: block;
+	text-indent: 88px;
+	margin-top: -62px;
+} */
+
+/*.........discoverLine..........*/
+
+/* .discoverLine{
+	position: absolute;
+	width: 28%;
+	display: inline-block;
+	margin: 88% 7%;
+	border-bottom: 2px solid white;
+} */
+
+/* ..........productIntro....... */
+
+.productIntro{
+	width: 100%;
+	text-align: center;
+	margin: 80px 0;
+}
+
+.productIntro h2{
+	font-size: 80px;
+	font-family:'Times New Roman', Times, serif;
+}
+
+.productIntro p{
+	font-size: 20px;
+}
+
+.productBoxSpecial{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+.specialOne{
+	width: 20%;
+	/* margin: 10px; */
+	text-align: center;
+}
+
+/*..........makeUpBg2..........*/
+
+.makeUpBg2{
+	width: 100%;
+	color: grey;
+	font-family: font-family: "Luna";
+	background-attachment: fixed;
+	display: table;
+	display: flex;
+	margin-top: 20px;
+}
+
+/*..........makeUpBg2Words..........*/
+
+.makeUpBg2Words{
+	width: 60%;
+	align-self: center;
+	text-align: center;
+	padding: 90px 200px;
+	box-shadow: 0px 5px 50px;
+	margin-left: 40px;
+}
+
+.makeUpBg2Words h3{
+	font-size: 50px;
+	font-weight: 900;
+	text-align: center;
+	color: black;
+}
+
+.makeUpBg2Words p{
+	font-size: 24px;
+	line-height: 40px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.makeUpBg2Img{
+	width: 40%;
+	margin-left: 40px;
+}
+
+/*.........makeUpBg3.........*/
+
+.makeUpBg3{
+	height: 1100px;
+	width: 75%;
+	background-image: url("../image/website/makeup/3.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	/* background-repeat: no-repeat; */
+	font-family: font-family: "Luna";
+	background-attachment: fixed;
+	display: table;
+}
+
+.makeUpBg3 h2{
+	color: white;
+	margin: 0;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	letter-spacing: 20px;
+	font-family: font-family: 'Open Sans', sans-serif;
+}
+
+/*........ourIdentityBigGp.........*/
+
+.ourIdentityBigGp{
+	width: 100%;
+	background-image: url("../image/website/makeup/makeUp4.jpg");
+	background-size: cover;
+	height: 1000px;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	display: table;
+	margin-left: 200px;
+	color: white;
+	padding:  190px 50px;
+	position: relative;
+}
+
+.ourIdentityBigGp h1{
+	font-size: 100px;
+	letter-spacing: 25px;
+	display:table-cell;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+/*........newTrending........*/
+
+.newTrending{
+	width: 100%;
+	text-align: center;
+	margin: 180px 0;
+}
+
+.newTrending h1{
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+
+.newTrending p{
+	color: gray;
+	font-size: 19px;
+}
+/*........identityGp........*/
+
+.identityGp{
+  width: 55%;
+}
+
+/*........identity.........*/
+
+.identity{
+  width: 100%;
+}
+
+.line{
+  display: block;
+  width: 10%;
+  padding: 5px 0;
+  margin-left: -45px;
+  border-top: 2px solid white;
+}
+
+/* ...............behindTheBrand....... */
+
+.behindTheBrand{
+	width: 100%;
+	padding: 70px 0;
+}
+
+.behindTheBrand span{
+	display: block;
+	text-indent: 80px;
+	font-size: 70px;
+	/* margin-top: -62px; */
+}
+
+.identityGp p{
+	margin-left: 85px;
+	line-height: 80px;
+	padding-bottom: 45px;
+}
+
+.identityGp a{
+	margin-left: 85px;
+	font-size: 45px;
+}
+
+.BrandLine{
+	display: block;
+	width: 30%;
+	margin: 28px 0;
+	margin-left: -45px;
+	border-top: 2px solid white;
+}
+
+/* ........identityImg..... */
+
+.identityImg{
+	width: 40%;
+	padding: 0 40px;
+}
+
+.identityImg img{
+	width: 100%;
+}
+
+/* .........onlineShopGp....... */
+
+.onlineShopGp{
+	margin-top: 540px;
+	margin-bottom: 250px;
+	width: 100%;
+	text-align: center;
+}
+
+/* .........onlineShopGp....... */
+
+.shopOnline{
+	display: none;
+}
+
+/* .........onlineShop....... */
+
+.onlineShop{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.text{
+	width: 20%;
+	/* font-family: 'Times New Roman', Times, serif; */
+	font-size: 48px;
+	font-weight: normal; 
+}
+	
+
+.shopLine{
+	width: 60%;
+	display: inline-block;
+	border-bottom: 2px solid lightgrey;
+	margin: 30px 0;
+}
+
+.visit{
+	width: 20%;
+	font-size: 25px;
+}
+
+/* ........highLight....... */
+
+.highLight{
+	position: relative;
+	height: 350px;
+}
+
+.highLightInfo{
+	width: 30%;
+	position: absolute;
+	/* top: 50%; */
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.highLight a{
+	font-size: 48px;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	padding: 20px 50px;
+}
+
+.item{
+	color: black;
+	line-height: 6px;
+	font-weight: normal;
+}
+
+/* ........shopImg....... */
+
+.shopImg{
+	width: 100%;
+	padding-top: 220px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.shopInfo{
+	width: 20%;
+	margin: 0 5px;
+}
+
+.infoBtn{
+	margin: 40px 0;
+	/* background-color: black; */
+	color: white;
+}
+
+.shopImg a{
+	text-decoration: none;
+	color: grey;
+	cursor: pointer;
+}
+
+/* ............instagramGp........... */
+
+.instagramGp{
+	width: 100%;
+	background-color: #F0EFEF ;
+	text-align: center;
+}
+/*..............brandLine............*/
+
+.brandLine{
+	width: 13%;
+	display: inline-block;
+	border-bottom: 2px solid grey;
+	margin-bottom:150px;
+	transform:rotate(90deg);
+}
+
+/*...............igTitleGp............*/
+
+.igTitleGp{
+	width: 100%;
+	text-align: center;
+}
+
+.brandName{
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: gray;
+}
+
+/*.................igPhotoGp............*/
+
+.igphotoGp{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 120px 0;
+}
+
+.igPhoto{
+	width: 20%;
+	margin: 0 10px;
+}
+
+/*********************************
+10. Testimonials
+*********************************/
+
+.testimonials
+{
+	width: 100%;
+	height: 500px;
+	padding-top: 88px;
+	padding-bottom: 93px;
+	margin-top: 110px;
+}
+.test_slider_container
+{
+	margin-top: 65px;
+}
+.test_text
+{
+	font-family: 'Lucida', serif;
+	font-size: 24px;
+	color: #8a8a8a;
+	font-style: italic;
+	line-height: 1.75;
+}
+.test_image
+{
+	width: 86px;
+	height: 86px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 26px;
+}
+.test_image img
+{
+	max-width: 100%;
+}
+.test_name
+{
+	font-family: 'Lucida', serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #232323;
+	margin-top: 14px;
+}
+.test_title
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	color: #937c6f;
+	margin-top: 4px;
+}
+
+/*********************************
+11. Newsletter
+*********************************/
+
+.newsletter
+{
+	width: 100%;
+	padding-left: 62px;
+	padding-right: 62px;
+	margin-top: 110px;
+}
+.newsletter_content
+{
+	position: relative;
+	width: 100%;
+	padding-top: 88px;
+	padding-bottom: 94px;
+}
+.newsletter_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.newsletter .section_subtitle,
+.newsletter .section_title
+{
+	color: #FFFFFF;
+}
+
+.section_title{
+	font-size: 60px;
+	text-transform: uppercase;
+	/* font-family: 'Lucida', serif; */
+}
+
+.section_subtitle{
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.newsletter_text{
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 19px;
+	font-weight: none;
+
+}
+.newsletter_container
+{
+	margin-top: 75px;
+}
+.newsletter_input
+{
+	width: 100%;
+	height: 46px;
+	background: #FFFFFF;
+	padding-left: 25px;
+	border: none;
+	outline: none;
+}
+.newsletter_input::-webkit-input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #b3b3b3 !important;
+}
+.newsletter_input:-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #b3b3b3 !important;
+}
+.newsletter_input::-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #b3b3b3 !important;
+} 
+.newsletter_input:-ms-input-placeholder
+{ 
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #b3b3b3 !important;
+}
+.newsletter_input::input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #b3b3b3 !important;
+}
+.newsletter_button
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 142px;
+	height: 46px;
+	background: #937c6f;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.newsletter_button:hover
+{
+	background: #e0e3e4;
+	color: #232323;
+}
+.newsletter_text
+{
+	font-size: 14px;
+	font-style: italic;
+	color: #FFFFFF;
+	margin-top: 19px;
+}
+
+/*********************************
+12. Footer
+*********************************/
+
+.footer
+{
+	margin-top: 180px;
+}
+.footer_logo a
+{
+	font-family: 'Lucida', serif;
+	font-size: 60px;
+	color: #232323;
+}
+.footer_nav
+{
+	margin-top: 14px;
+}
+.footer_nav ul li
+{
+	display: inline-block;
+	margin-right: 53px;
+}
+.footer_nav ul li:last-child
+{
+	margin-right: 0;
+}
+.footer_nav ul li a
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #232323;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.footer_nav ul li a:hover
+{
+	color: #937c6f;
+}
+.footer_social
+{
+	margin-top: 51px;
+}
+.footer_social ul li
+{
+	display: inline-block;
+	margin-right: 36px;
+}
+.footer_social ul li:last-child
+{
+	margin-right: 0;
+}
+.footer_social ul li a i
+{
+	font-size: 24px;
+	color: #937c6f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.footer_social ul li a i:hover
+{
+	color: #e0e3e4;
+}
+.copyright
+{
+	margin-top: 56px;
+	padding-bottom: 13px;
+	font-family: 'Lucida', serif;
+	font-size: 12px;
+	color: #232323;
+}
+
+
+/*  @media only screen and (min-width: 15000px)
+	and (max-width: 1920px){ */
+	@media screen and (min-width: 1500px) and 
+	(max-width: 1920px){
+
+	/*......makeUpBg2Words.......*/
+
+	.makeUpBg2Words{
+		padding:  90px 100px;
+	}
+
+	.makeUpBg2Words p{
+		line-height: 40px;
+	}
+
+ 	/*......ourIdentityBox.......*/
+
+	.ourIdentityBox{
+		width: 100%;
+	}
+
+	.ourIdentityBox1{
+		width: 10%;
+	}
+
+	.identityGp{
+		width: 55%;
+	}
+
+	.identityImg{
+		width: 45%;
+		padding: 0 19px;
+	}
+
+	.identityGp p{
+		line-height: 50px;
+	}
+
+	.behindTheBrand span{
+		font-size: 54px;
+	}
+
+	.behindTheBrand h3{
+		font-size: 54px;
+	}
+
+	.onlineShopGp{
+		margin-top: 460px;
+	}
+
+	.highLight a{
+		font-size: 25px;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 85px;
+	}
+
+	.infoBtn{
+		margin: 10px 0;
+	}
+}
+
+/*  @media only screen and (min-width: 1200px)
+	and (max-width: 1500px){ */
+	@media screen and (min-width: 1200px) and 
+	(max-width: 1500px){
+
+	.home{
+		height: 710px;
+	}
+
+	.makeUpBg2{
+		width: 100%;
+	}
+
+	.makeUpBg2Words{
+		width: 70%;
+		padding: 40px 80px;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 40px;
+	}
+
+	.makeUpBg2Img{
+		width: 50%;
+	}
+
+	.makeUpBg2Words p{
+		line-height: 34px;
+		margin-top: 10px;
+		font-size: 15px;
+		padding: 0;
+	}
+
+	/*.........makeUpBg3.........*/
+
+	.makeUpBg3{
+		/* background-attachment: scroll */
+		background-size: cover;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 65px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-left: 0;
+	}
+	
+	.ourIdentityBigGp h1{
+		font-size: 65px;
+	}
+
+ 	/*......ourIdentityBox.......*/
+
+	.ourIdentityBox{
+		width: 85%;
+		margin-left: 160px;
+	}
+
+	.ourIdentityBox1{
+		width: 10%;
+	}
+
+	.identityGp{
+		width: 55%;
+	}
+
+	.identityImg{
+		width: 45%;
+		padding: 0 19px;
+	}
+
+	.identityGp p{
+		line-height: 40px;
+	}
+
+	.behindTheBrand span{
+		font-size: 54px;
+	}
+
+	.behindTheBrand h3{
+		font-size: 54px;
+	}
+
+	.highLight a{
+		font-size: 30px;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 15px;
+	}
+
+	.infoBtn{
+		margin: 10px 0;
+	}
+
+
+	/*..............identityGp...........*/
+
+	.identityGp{
+		width: 75%;
+		padding-bottom: 40px;
+	}
+	
+	.identityImg{
+		width: 35%;
+		/* padding: 150px; */
+	}
+
+	.text{
+		width: 25%;
+		padding: 15px 0;
+		font-size: 35px;
+		text-indent: 0;
+	}
+
+	 .identityGp p{
+		line-height: 45px;
+		font-size: 29px;
+	} 
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 420px;
+	}
+
+	.type{
+		color: black;
+		line-height: 0px;
+		font-weight: normal;
+	}
+
+	/* ........shopImg....... */
+
+	.shopImg{
+		padding-top: 105px;
+	}
+
+	/* ........highLight....... */
+
+	.highLightInfo{
+		width: 33%;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 90px;
+	}
+	
+	.highLight a{
+		font-size: 19px;
+		line-height: 30px;
+		padding: 15px 30px;
+	}
+
+	/*................footer............*/
+
+	.footer{
+		margin-top: 100px;
+	}
+}
+
+/*  @media only screen and (min-width: 992px)
+	and (max-width: 1200px){ */
+	@media screen and (min-width: 992px) and 
+	(max-width: 1200px){
+
+	.logo a{
+		margin-left: -25px;
+	}
+
+	.main_nav{
+		display: none;
+	}
+
+	.header{
+		height: 55px;
+	}
+
+	.home{
+		height: 710px;
+	}
+
+	.productIntro{
+		margin: 30px;
+	}
+
+	.productIntro h2{
+		font-size: 55px;
+	}
+
+	.productIntro p{
+		font-size: 20px;
+	}
+
+	.productBoxSpecial{
+		margin-top: 65px;
+		margin-bottom: 80px;
+	}
+
+	.makeUpBg2{
+		width: 100%;
+		margin-top: 120px;
+	}
+
+	.makeUpBg2Words{
+		width: 70%;
+	}
+
+	.makeUpBg2Img{
+		width: 50%;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 34px;
+		padding: 0 30px;
+	}
+
+	.makeUpBg2Words{
+		padding: 50px 30px;
+	}
+
+	.makeUpBg2Words p{
+		line-height: 30px;
+		font-size: 15px;
+		padding: 0;
+		margin-top: 10px;
+	}
+
+	.makeUpBg3{
+		background-size: cover;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 65px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+	}
+	/*..............identityGp...........*/
+
+	.identityGp{
+		width: 90%;
+		padding-bottom: 40px;
+	}
+
+	.ourIdentityBigGp{
+		background-size: cover;
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 65px;
+		letter-spacing: 14px;
+	}
+	
+	.identityImg{
+		width: 100%;
+		padding: 210px;
+	}
+
+	.text{
+		width: 25%;
+		padding: 15px 0;
+		font-size: 35px;
+		text-indent: 0;
+	}
+
+	 .identityGp p{
+		line-height: 55px;
+		font-size: 29px;
+	}
+
+	/* ..........newTrending....... */
+
+	.newTrending{
+		margin: 80px 0;
+	}
+
+	.newTrending h1{
+		font-size: 55px;
+	}
+
+	.newTrending p{
+		font-size: 20px;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 280px;
+		margin-bottom: 150px;
+	}
+
+	/* ........shopImg....... */
+
+	.shopImg{
+		padding-top: 105px;
+	}
+
+	/* .......infoBtn..... */
+
+	.infoBtn{
+		margin: 10px 0;
+	}
+
+	.infoBtn a{
+		font-size: 22px;
+	}
+
+	/* .....igphotoGp.... */
+
+	.igphotoGp{
+		padding-top: 70px;
+		padding-bottom: 120px;
+	}
+
+	/* ........highLight....... */
+
+	.highLightInfo{
+		width: 33%;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 50px;
+	}
+	
+	.highLight a{
+		font-size: 20px;
+		line-height: 30px;
+		padding: 12px 40px;
+		box-shadow: 1px 1px 150px;
+	}
+
+	/*................footer............*/
+
+	.footer{
+		margin-top: 100px;
+	}
+}
+
+/* @media only screen and (min-width: 767px)
+   and (max-width: 992px){ */
+	@media screen and (min-width: 767px) and 
+	(max-width: 992px){
+
+	.header{
+		height: 45px;
+	}
+
+	.logo a{
+		margin-left: -28px;
+	}
+
+	.home{
+		height: 460px;
+	}
+
+	.productIntro h2{
+		font-size: 55px;
+		letter-spacing: 8px;
+	}
+
+	.productIntro p{
+		font-size: 14px;
+	}
+    
+    .productBoxSpecial{
+    	margin: 0;
+    }
+
+	.makeUpBg2{
+		margin-top: 100px;
+	}
+
+	.makeUpBg2Words{
+		width: 70%;
+		padding: 38px 40px;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 27px;
+	}
+
+	.makeUpBg2Words p{
+		font-size: 13px;
+		line-height: 21px;
+		margin-top: 13px;
+		font-weight: normal;
+		padding: 0;
+	} 
+
+	.makeUpBg2Img{
+		width: 50%;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 57px;
+	}
+
+	.behindTheBrand span{
+		font-size: 57px;
+	}
+
+	/*..............makeUpBg3...........*/
+
+	.makeUpBg3{
+		background-size: cover;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 53px;
+	}
+	
+	/*..............identityGp...........*/
+
+	.ourIdentityBigGp{
+		background-size: cover;
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 53px;
+	}
+
+	.identityGp{
+		width: 85%;
+	}
+	
+	.identityImg{
+		width: 100%;
+		padding: 140px;
+	}
+
+	.text{
+		width: 100%;
+		padding: 15px 0;
+		font-size: 35px;
+		text-indent: 40px;
+	}
+
+	 .identityGp p{
+		line-height: 55px;
+		font-size: 23px;
+	}
+
+	/* .........newTrending....... */
+
+	.newTrending{
+		margin-top: 80px;
+		margin-bottom: 0;
+	}
+
+	.newTrending h1{
+		font-size: 45px;
+	}
+
+	.newTrending p{
+		font-size: 15px;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 0;
+		margin-bottom: 150px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .........onlineShop....... */
+
+	.onlineShop{
+		display: none;
+	}
+
+	.shopOnline{
+		display: block;
+		text-align: center;
+	}
+
+	.text{
+		width: 100%;
+		/* color: grey; */
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 65px;
+		font-weight: normal; 
+		text-indent: 40px;
+		margin: 0 auto;
+		padding-bottom: 7px;
+	}
+
+	.brandLine{
+		width: 19%;
+		margin-bottom: 100px;
+	}
+		
+
+	.shopLine{
+		width: 80%;
+		display: block;
+		border-bottom: 2px solid lightgrey;
+		margin: 0 auto;
+	}
+	/* ........highLight....... */
+
+	.highLight{
+		/* position: static; */
+		height: 700px;
+		padding: 50px 100px;
+	}
+
+	.highLight a{
+		font-size: 20px;
+		line-height: 40px;
+		padding: 16px 40px;
+	}
+
+	.highLightInfo{
+		width: 90%;
+		position: static;
+		transform: none;
+		margin: 0 auto;
+	}
+
+	.highLight img{
+		padding-bottom: 50px;
+	}
+
+	.infoBtn{
+		margin: 5px 0;
+	}
+
+	.infoBtn a{
+		font-size: 18px;
+	}
+
+	.item{
+		line-height: 25px;
+	}
+
+	.type{
+		font-size: 22px;
+		color: grey;
+		width: 100%;
+		margin: 25px 0;
+	}
+
+	.shopImg{
+		padding-top: 350px;
+	}
+
+	/*...............igTitleGp............*/
+
+	.brandName{
+		letter-spacing: 2px;
+		font-size: 15px;
+		color: gray;
+	}
+
+	.igTitleGp h3{
+		font-size: 45px;
+	}
+
+	.igphotoGp{
+		padding: 50px 0;	
+	}
+
+	.testimonials{
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	.footer{
+		margin-top: 100px;
+	}
+}
+
+/* @media only screen and (min-width: 576px)
+   and (max-width: 768px){ */
+	@media screen and (min-width: 576px) and 
+	(max-width: 768px){
+
+	.header{
+		height: 55px;
+	}
+
+	.logo a{
+		margin-left: -35px;
+	}
+
+	.home{
+		height: 460px;
+	}
+
+	.productIntro{
+		margin-top: 0;
+	}
+
+	.productIntro h2{
+		font-size: 40px;
+	}
+
+	.productIntro p{
+		font-size: 15px;
+	}
+
+	.productBoxSpecial{
+		margin-top: -20px;
+		margin-bottom: 0;
+	}
+
+	.makeUpBg2{
+		margin-top: 100px;
+		width: 100%;
+		color: grey;
+		background-attachment: scroll;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+
+	}
+
+	.makeUpBg2Words{
+		width: 80%;
+	}
+
+	.makeUpBg2Img{
+		width: 50%;
+		margin-left: 0;
+	}
+
+	.makeUpBg2Words{
+		padding: 35px 30px;
+		margin-top: 0;
+		margin-bottom: 100px;
+		margin-left: 0;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 27px;
+	}
+
+	.makeUpBg2Words p{
+		font-size: 13px;
+		line-height: 21px;
+		margin-top: 13px;
+		font-weight: normal;
+		padding: 0;
+	} 
+
+	.makeUpBg3{
+		height: 900px;
+		background-size: cover;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 40px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		background-size: cover;
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 40px;
+		left: 42%;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 45px;
+	}
+
+	.behindTheBrand span{
+		font-size: 45px;
+	}
+
+	/*..............identityGp...........*/
+
+	.identityGp{
+		width: 85%;
+	}
+	
+	.identityImg{
+		width: 100%;
+		padding: 140px;
+	}
+
+	.text{
+		width: 100%;
+		padding: 15px 0;
+		font-size: 35px;
+		text-indent: 40px;
+	}
+
+	 .identityGp p{
+		line-height: 46px;
+		font-size: 23px;
+	}
+
+	.about{
+		font-size: 32px;
+	}
+
+	.brandLine{
+		margin-bottom: 100px;
+		margin-left: -20px;
+	}
+
+	.identityImg{
+		width: 100%;
+		padding: 100px;
+	}
+
+	/* .........newTranding...... */
+
+	.newTrending{
+		margin-top: 80px;
+		margin-bottom: 50px;
+	}
+
+	.newTrending h1{
+		font-size: 42px;
+	}
+
+	.newTrending p{
+		font-size: 15px;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 0px;
+		margin-bottom: 120px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .........onlineShop....... */
+
+	.onlineShop{
+		display: none;
+	}
+
+	.highLight{
+		position: static;
+	}
+
+	.highLightInfo{
+		width: 85%;
+		margin: 0 auto;
+		position: static;
+		transform: translate(0, 0);
+	}
+
+	.highLightInfo img{
+		padding-bottom: 54px;
+	}
+
+	.highLight a{
+		font-size: 15px;
+		background-color: black;
+		padding: 10px 30px;
+	}
+
+	.shopOnline{
+		display: block;
+		text-align: center;
+	}
+
+	.shopImg{
+		padding-top: 530px;
+	}
+
+	.brandLine{
+		width: 18%;
+		color: gray;
+		margin-bottom: 80px;
+	}
+
+	.identifyText{
+		width: 100%;
+		/* color: grey; */
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 65px;
+		font-weight: normal; 
+		text-indent: 40px;
+		margin: 0 auto;
+		padding-bottom: 7px;
+	}
+
+	.shopLine{
+		width: 80%;
+		display: block;
+		border-bottom: 2px solid lightgrey;
+		margin: 0 auto;
+	}
+
+	.igTitleGp h3{
+		font-size: 35px;
+	}
+
+	.igphotoGp{
+		padding: 60px 0;
+	}
+
+	.testimonials{
+		margin-top: 0;
+	}
+
+	.section_title{
+		font-size: 42px;
+	}
+
+	.test_text{
+		font-size: 15px;
+	}
+
+	.newsletter{
+		margin-top: 0;
+	}
+
+	.footer{
+		margin-top: 100px;
+	}
+
+}
+
+/* @media only screen and (min-width: 410x)
+   and (max-width: 576px){ */
+	@media screen and (min-width: 410px) and 
+	(max-width: 576px){
+
+	.logo a{
+		margin-left: -42px;
+	}
+
+
+	.burger_container{
+		margin-right: -44px;
+	}
+
+	.home{
+		height: 400px;
+	}
+
+	.home_slider_background{
+		background-size: cover;
+	}
+
+	.home_slider_title{
+		font-size: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.productIntro h2{
+		font-size: 35px;
+	}
+
+	.productIntro p{
+		font-size: 12px;		
+	}
+
+	.productBoxSpecial{
+		margin-top: 0;
+	}
+
+	/*.........makeUpBg..........*/
+
+	.makeUpBg2{
+		margin-top: 80px;
+	}
+
+
+	.makeUpBg2Words{
+		width: 90%;
+		margin-left: 0;
+		padding: 40px 20px;
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 27px;
+	}
+
+	.makeUpBg2Words p{
+		font-size: 13px;
+		line-height: 21px;
+		margin-top: 13px;
+		font-weight: normal;
+		padding: 0;
+	} 
+
+	.makeUpBg2Img{
+		width: 70%;
+		margin-left: 0;
+	}
+
+	/*..........makeUpBg2..........*/
+
+	.makeUpBg2{
+		width: 100%;
+		color: grey;
+		background-attachment: scroll;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	/*.........makeUpBg3.........*/
+
+	.makeUpBg3{
+		background-size: cover;
+		height: 420px;
+		width: 100%;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 40px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		margin-left: 0;
+		background-size: cover;
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 40px;
+		letter-spacing: 18px;
+		left: 25%;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		/* height: 650px; */
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.identityGp{
+		width: 100%;
+	}
+
+	.identityText{
+		font-size: 30px;
+	}
+
+	.behindTheBrand{
+		padding: 0;
+		margin: 50px 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 42px;
+	}
+
+	.behindTheBrand span{
+		font-size: 40px;
+		text-indent: 0;
+	}
+
+	.identityGp p{
+		font-size: 24px;
+		line-height: 40px;
+		margin-left: 0;
+	}
+
+	/*........identityImg.........*/
+
+	.identityImg{
+		width: 100%;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 0;
+		margin-bottom: 80px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .........newTranding...... */
+
+	.newTrending{
+		margin-top: 80px;
+		margin-bottom: 320px;
+	}
+
+	.newTrending h1{
+		font-size: 42px;
+	}
+
+	.newTrending p{
+		font-size: 15px;
+	}
+
+	/* .........onlineShop....... */
+
+	.onlineShop{
+		display: none;
+	}
+
+	.shopOnline{
+		display: block;
+		margin-top: 100px;
+		margin-bottom: 400px;
+	}
+
+	.shopLine{
+		width: 80%;
+		display: block;
+		border-bottom: 2px solid lightgrey;
+		margin: 0 auto;
+	}
+
+	.highLightInfo{
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: 20px 0;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 70px;
+	}
+
+	.highLight a{
+		font-size: 15px;
+		line-height: 10px;
+		padding: 10px 30px;
+	}
+
+	.shopImg{
+		width: 100%;
+		padding-top: 60px;
+		flex-wrap: wrap;
+	}
+
+	.shopInfo{
+		width: 70%;
+	}
+
+	.infoBtn{
+		margin: 0;
+	}
+
+	/*..........instagramGp......*/
+
+	.brandLine{
+		width: 25%;
+		margin-bottom: 90px;
+	}
+
+	.igTitleGp h3{
+		font-size: 30px;
+	}
+
+	/*..........instagramGp......*/
+
+	.igphotoGp{
+		width: 100%;
+		padding: 50px 0;
+		flex-wrap: wrap;
+	}
+
+	.igPhoto{
+		width: 40%;
+		margin: 10px 10px;
+	}
+
+	.testimonials{
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.footer{
+		margin-top: 80px;
+	}
+}
+
+/* @media only screen and (min-width: 375px)
+   and (max-width: 410px){ */
+	@media screen and (min-width: 375px) and 
+	(max-width: 410px){
+
+	.logo a{
+		margin-left: -40px;
+	}
+
+	.burger_container{
+		margin-right: -44px;
+	}
+
+	.home{
+		height: 400px;
+	}
+
+	.home_slider_background{
+		background-size: cover;
+	}
+
+	.home_slider_title{
+		font-size: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.productIntro h2{
+		font-size: 35px;
+	}
+
+	.productIntro p{
+		font-size: 12px;		
+	}
+
+	.productBoxSpecial{
+		margin-top: 0;
+	}
+
+	/*.........makeUpBg..........*/
+
+	.makeUpBg2{
+		margin-top: 80px;
+	}
+
+
+	.makeUpBg2Words{
+		width: 90%;
+		margin-left: 0;
+		padding: 40px 20px;
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 27px;
+	}
+
+	.makeUpBg2Words p{
+		font-size: 13px;
+		line-height: 21px;
+		margin-top: 13px;
+		font-weight: normal;
+		padding: 0;
+	} 
+
+	.makeUpBg2Img{
+		width: 70%;
+		margin-left: 0;
+	}
+
+	/*..........makeUpBg2..........*/
+
+	.makeUpBg2{
+		width: 100%;
+		color: grey;
+		background-attachment: scroll;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	/*.........makeUpBg3.........*/
+
+	.makeUpBg3{
+		background-size: cover;
+		height: 420px;
+		width: 100%;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 40px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		margin-left: 0;
+		background-size: cover;
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 40px;
+		letter-spacing: 18px;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		/* height: 650px; */
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.identityGp{
+		width: 100%;
+	}
+
+	.identityText{
+		font-size: 30px;
+	}
+
+	.behindTheBrand{
+		padding: 0;
+		margin: 50px 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 42px;
+	}
+
+	.behindTheBrand span{
+		font-size: 40px;
+		text-indent: 0;
+	}
+
+	.identityGp p{
+		font-size: 24px;
+		line-height: 40px;
+		margin-left: 0;
+	}
+
+	/*........identityImg.........*/
+
+	.identityImg{
+		width: 100%;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 0;
+		margin-bottom: 80px;
+		width: 100%;
+		text-align: center;
+	}
+	
+	/* .........newTranding...... */
+	
+	.newTrending{
+		margin-top: 80px;
+		margin-bottom: 320px;
+	}
+
+	.newTrending h1{
+		font-size: 42px;
+	}
+
+	.newTrending p{
+		font-size: 15px;
+	}
+
+	/* .........onlineShop....... */
+
+	.onlineShop{
+		display: none;
+	}
+
+	.shopOnline{
+		display: block;
+		margin-top: 100px;
+		margin-bottom: 400px;
+	}
+
+	.shopLine{
+		width: 80%;
+		display: block;
+		border-bottom: 2px solid lightgrey;
+		margin: 0 auto;
+	}
+
+	.highLightInfo{
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: 20px 0;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 70px;
+	}
+
+	.highLight a{
+		font-size: 15px;
+		line-height: 10px;
+		padding: 10px 30px;
+	}
+
+	.shopImg{
+		width: 100%;
+		padding-top: 60px;
+		flex-wrap: wrap;
+	}
+
+	.shopInfo{
+		width: 70%;
+	}
+
+	.infoBtn{
+		margin: 0;
+	}
+
+	/*..........instagramGp......*/
+
+	.brandLine{
+		width: 25%;
+		margin-bottom: 90px;
+	}
+
+	.igTitleGp h3{
+		font-size: 42px;
+	}
+
+	.brandName{
+		color: gray;
+	}
+
+	/*..........instagramGp......*/
+
+	.igphotoGp{
+		width: 100%;
+		padding: 50px 0;
+		flex-wrap: wrap;
+	}
+
+	.igPhoto{
+		width: 40%;
+		margin: 10px 10px;
+	}
+
+	.testimonials{
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.footer{
+		margin-top: 80px;
+	}
+}
+
+
+/* @media only screen and (min-width: 320px)
+   and (max-width: 376px){ */
+	@media screen and (min-width: 320px) and 
+	(max-width: 376px){
+
+	.logo a{
+		margin-left: -47px;
+	}
+
+	.header_content{
+		margin-left: 5px;
+	}
+
+	.burger_container{
+		margin-right: -44px;
+	}
+	
+	.home{
+		height: 400px;
+	}
+
+	.home_slider_background{
+		background-size: cover;
+	}
+
+	.home_slider_title{
+		font-size: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.productIntro {
+		margin: 48px 0;
+	}
+
+	.productIntro h2{
+		font-size: 30px;
+	}
+
+	.productIntro p{
+		font-size: 12px;		
+	}
+
+	.productBoxSpecial{
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+
+
+	/*.........makeUpBg2..........*/
+
+	.makeUpBg2{
+		margin-top: 80px;
+		flex-direction: column-reverse;
+	}
+
+
+	.makeUpBg2Words{
+		width: 90%;
+		margin-left: 0;
+		padding: 40px 20px;
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 27px;
+	}
+
+	.makeUpBg2Words p{
+		font-size: 13px;
+		line-height: 21px;
+		margin-top: 13px;
+		font-weight: normal;
+		padding: 0;
+	} 
+
+
+	.makeUpBg2Img{
+		width: 70%;
+		margin-left: 0;
+		align-self: center;
+	}
+
+	/*.........makeUpBg3.........*/
+
+	.makeUpBg3{
+		background-size: 150%;
+		/* background-repeat: no-repeat; */
+		height: 320px;
+		width: 100%;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 30px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		margin-left:  0;
+		background-size: 210%;
+		height: 320px;
+		width: 100%;
+		/* background-repeat: no-repeat; */
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 30px;
+		letter-spacing: 20px;
+		left: 40%;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		/* height: 650px; */
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.identityGp{
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	.line{
+		width: 28%;
+	}
+
+	.identityText{
+		font-size: 25px;
+	}
+
+	.behindTheBrand{
+		padding: 0;
+		margin: 50px 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 30px;
+	}
+
+	.behindTheBrand span{
+		font-size: 30px;
+		text-indent: 0;
+	}
+
+	.identityGp p{
+		font-size: 22px;
+		line-height: 30px;
+		margin-left: 0;
+		font-family: 'Lucida', serif;
+	}
+
+	.identityGp a{
+		margin-left: -5px;
+	}
+
+	.BrandLine{
+		margin: 0;
+		margin-left: -35px;
+
+	}
+
+	.identityImg{
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 50px;
+		margin-bottom: 80px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .........newTranding...... */
+
+	.newTrending{
+		margin-top: 80px;
+		margin-bottom: 320px;
+	}
+
+	.newTrending h1{
+		font-size: 42px;
+	}
+
+	.newTrending p{
+		font-size: 15px;
+	}
+
+	/* .........onlineShop....... */
+
+	.onlineShop{
+		display: none;
+	}
+
+	.shopOnline{
+		display: block;
+		margin-top: 0;
+		margin-bottom: 320px;
+	}
+
+	.shopLine{
+		width: 80%;
+		display: block;
+		border-bottom: 2px solid lightgrey;
+		margin: 0 auto;
+	}
+
+	.highLightInfo{
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: 20px 0;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 70px;
+	}
+
+	.highLight a{
+		font-size: 15px;
+		line-height: 10px;
+		padding: 10px 30px;
+	}
+
+	.shopImg{
+		width: 100%;
+		padding-top: 0;
+		flex-wrap: wrap;
+	}
+
+	.shopInfo{
+		width: 70%;
+	}
+
+	.infoBtn{
+		margin: 0;
+	}
+
+	/*..........instagramGp......*/
+
+	.brandLine{
+		width: 25%;
+		margin-bottom: 60px;
+	}
+
+	.igTitleGp h3{
+		font-size: 40px;
+	}
+
+	.brandName{
+		color: gray;
+	}
+
+	/*..........instagramGp......*/
+
+	.igphotoGp{
+		width: 100%;
+		padding: 40px 0;
+		flex-wrap: wrap;
+	}
+
+	.igPhoto{
+		width: 40%;
+		margin: 10px 10px;
+	}
+
+	.testimonials{
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.footer{
+		margin-top: 80px;
+	}
+}
+
+/*@media screen and (max-width: 320px){ */
+ 
+	@media screen and (max-width: 320px){
+
+	.burger_container{
+		margin-right: -44px;
+	}
+	
+	.home{
+		height: 400px;
+	}
+
+	.home_slider_background{
+		background-size: cover;
+	}
+
+	.home_slider_title{
+		font-size: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.productIntro {
+		margin: 48px 0;
+	}
+
+	.productIntro h2{
+		font-size: 30px;
+	}
+
+	.productIntro p{
+		font-size: 12px;		
+	}
+
+	.productBoxSpecial{
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+
+
+	/*.........makeUpBg2..........*/
+
+	.makeUpBg2{
+		margin-top: 80px;
+		flex-direction: column-reverse;
+	}
+
+
+	.makeUpBg2Words{
+		width: 90%;
+		margin-left: 0;
+		padding: 40px 20px;
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+
+	.makeUpBg2Words h3{
+		font-size: 27px;
+	}
+
+	.makeUpBg2Words p{
+		font-size: 13px;
+		line-height: 21px;
+		margin-top: 13px;
+		font-weight: normal;
+		padding: 0;
+	} 
+
+
+	.makeUpBg2Img{
+		width: 70%;
+		margin-left: 0;
+		align-self: center;
+	}
+
+	/*.........makeUpBg3.........*/
+
+	.makeUpBg3{
+		background-size: cover;
+		height: 420px;
+		width: 100%;
+	}
+
+	.makeUpBg3 h2{
+		font-size: 30px;
+	}
+
+	/*........ourIdentityBigGp.........*/
+
+	.ourIdentityBigGp{
+		margin-left:  0;
+		background-size: cover;
+	}
+
+	.ourIdentityBigGp h1{
+		font-size: 30px;
+		letter-spacing: 20px;
+		left: 65%;
+	}
+
+	.ourIdentityBox{
+		width: 100%;
+		/* height: 650px; */
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.identityGp{
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	.line{
+		width: 28%;
+	}
+
+	.identityText{
+		font-size: 25px;
+	}
+
+	.behindTheBrand{
+		padding: 0;
+		margin: 50px 0;
+	}
+
+	.behindTheBrand h3{
+		font-size: 30px;
+	}
+
+	.behindTheBrand span{
+		font-size: 30px;
+		text-indent: 0;
+	}
+
+	.identityGp p{
+		font-size: 22px;
+		line-height: 30px;
+		margin-left: 0;
+		font-family: 'Lucida', serif;
+	}
+
+	.identityGp a{
+		margin-left: -5px;
+	}
+
+	.BrandLine{
+		margin: 0;
+		margin-left: -35px;
+
+	}
+
+	.identityImg{
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	/* .........onlineShopGp....... */
+
+	.onlineShopGp{
+		margin-top: 50px;
+		margin-bottom: 80px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .........newTranding...... */
+
+	.newTrending{
+		margin-top: 80px;
+		margin-bottom: 320px;
+	}
+
+	.newTrending h1{
+		font-size: 42px;
+	}
+
+	.newTrending p{
+		font-size: 15px;
+	}
+
+	/* .........onlineShop....... */
+
+	.onlineShop{
+		display: none;
+	}
+
+	.shopOnline{
+		display: block;
+		margin-top: 0;
+		margin-bottom: 320px;
+	}
+
+	.shopLine{
+		width: 80%;
+		display: block;
+		border-bottom: 2px solid lightgrey;
+		margin: 0 auto;
+	}
+
+	.highLightInfo{
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: 20px 0;
+	}
+
+	.highLightInfo img{
+		padding-bottom: 70px;
+	}
+
+	.highLight a{
+		font-size: 15px;
+		line-height: 10px;
+		padding: 10px 30px;
+	}
+
+	.shopImg{
+		width: 100%;
+		padding-top: 0;
+		flex-wrap: wrap;
+	}
+
+	.shopInfo{
+		width: 70%;
+	}
+
+	.infoBtn{
+		margin: 0;
+	}
+
+	/*..........instagramGp......*/
+
+	.brandLine{
+		width: 25%;
+		margin-bottom: 60px;
+	}
+
+	.igTitleGp h3{
+		font-size: 40px;
+	}
+
+	.brandName{
+		color: gray;
+	}
+
+	/*..........instagramGp......*/
+
+	.igphotoGp{
+		width: 100%;
+		padding: 40px 0;
+		flex-wrap: wrap;
+	}
+
+	.igPhoto{
+		width: 40%;
+		margin: 10px 10px;
+	}
+
+	.testimonials{
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.footer{
+		margin-top: 80px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

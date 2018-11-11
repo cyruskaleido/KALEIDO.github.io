@@ -1,0 +1,441 @@
+
+* {
+ /*  outline: 1px solid red;  */ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ /* font-family: Verdana, sans-serif;*/
+  font-size: small;
+  font-family: serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1{
+  /* 12px * 200% 約 24px */
+  font-size: 200%;
+  font-family: serif;
+  text-align: center;
+}
+
+h3{
+  /* 12px * 120% 約 14px  */
+  font-size: 120%;
+}
+
+h4{
+   /* 12px * 120% 約 14px  */
+  font-size: 120%; 
+}
+
+h5{
+  /* 12px * 120% 約 14px  */
+  font-size: 120%;
+}
+
+h6{
+  /* 12 * 1.5 = 18px  */
+  font-size: 1.5em;
+}
+
+p{
+  /* 12 * 1.5 = 18px  */
+  font-size: 1.5em;
+ /* line-height: 28px;*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+/* .................container................. */
+
+.container{
+    width:  100%;
+    max-width: 1920px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* ................mySidenav................. */
+
+.topLine{
+    background-color: white;
+    color: white;
+    width: 100%;    
+    display: flex;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0,.1);
+}
+
+ ul{ 
+     display: inline-block;
+     margin: auto; 
+     width: 73%;
+     padding-right: 0;
+ } 
+
+ .topLine li{
+    display: inline-block;
+    padding:0 20px;
+    font-size: 15px;
+    list-style: none;
+    color: #333;
+    letter-spacing: .15em;
+    font-family: FranklinGothic,Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    background-color:  darkgray;
+    color: white;
+} 
+
+.sidenav a {
+    padding: 4%;
+    border-bottom: 4px solid white;
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: FranklinGothic,Helvetica,sans-serif;
+}
+
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border:none;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*............automaticSlideshow..................*/
+
+.automaticSlideshow h2{
+  font-size: 600%;
+  text-align: center;
+}
+/*............slideshow-container..................*/
+
+.slideshow-container {
+  max-width: 88%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*................bigHighLights................*/
+
+ .bigHighLights{
+     width: 100%; 
+     position: relative; 
+ }
+
+/*................highLights................*/
+ 
+.highLights{
+  width: 100%;
+  text-align: center;
+  padding: 140px 0;
+ }
+
+.line{
+  display: inline-block;
+  width: 30%;
+  margin: 30px 10px;
+  border-top: 2px solid #ccc;
+ } 
+
+.text{
+  width: 30%;
+   font-size: 70px;
+ }
+ 
+ /*...............highLightsGp................*/
+
+.highLightsGp{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 130px;
+  position: absolute;
+}
+
+.highLightsImg{
+  width: 60%;
+}
+
+.highLightsImg img{
+  width: 100%;
+}
+
+.highLightsInfo{
+  width: 40%;
+  align-self: center;
+  text-align: center;
+}
+
+.info p{
+  font-size: 1.7em;
+  line-height: 32px;
+}
+
+.button{
+    background-color: grey;
+    color: white;
+    font-size: 10px;
+    padding: 7px 9px;
+    text-align: center;
+    display: inline-block;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+/*................fashionNews...............*/
+
+.fashionNews{
+  width: 100%;
+  text-align: center;
+  padding: 140px 0;
+  margin-top: 600px;
+ }
+
+ .title{
+  font-size: 100px;
+ }
+
+ .fashionNews h1{
+  font-size: 50px;
+ }
+
+/*................newsGp...............*/
+
+.newsGp{
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.newsMain{
+  width: 50%;
+  padding: 0 20px;
+  margin: 120px 0;
+  border-top: 1px solid lightgrey;
+}
+
+.newsTitle{
+  padding: 20px 0;
+} 
+
+.wordsTitle{
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 10px 0;
+} 
+
+.wordsDetails p{
+  font-size: 1em;
+}
+
+.newsAside{
+  width: 50%;
+  margin: 120px 0;
+  padding: 0 50px;
+}
+
+/*............ourIdentity.............*/
+
+.ourIdentityBigGp{
+  width: 100%;
+}
+
+.identityGp{
+  width: 40%;
+}
+
+.identity{
+  width: 100%;
+  text-align: left;
+}
+
+.line{
+  display: inline-block;
+  width: 30%;
+  border-top: 2px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.......................footerGp..................*/ 
+
+.footerGp{
+    background-color: lightgrey;
+    width: 100%;
+    margin-top: 500px;
+    padding-top: 120px;
+    height: 400px;
+    text-align: center;
+} 
+
+.footerGp h3{
+    width: 100%;
+    font-size: 300%;
+} 
+
+.footerInfo{
+    width: 30%;
+    margin: auto;
+}
+
+.contactLogo{
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+}
+
+.contactLogo img{
+    width: 45%;
+}
+
+.footerGp h4{
+    font-size: 200%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,439 @@
+
+*{
+   /* outline: 1px solid red;   */
+   box-sizing: border-box;
+}
+
+/* ................body................. */
+
+/* 一般都會選擇 small 或 medium為主大小；
+     small約 12px; medium 約 14px;*/
+  
+body{
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+}
+
+h1{
+  /* 12px * 200% 約 24px */
+  font-size: 200%;
+}
+
+h3{
+  /* 12px * 120% 約 14px  */
+  font-size: 120%;
+}
+
+h5{
+  /* 12px * 120% 約 14px  */
+  font-size: 120%;
+}
+
+h6{
+  /* 12 * 1.5 = 18px  */
+  font-size: 1.5em;
+}
+
+p{
+  /* 12 * 1.5 = 18px  */
+  font-size: 1.5em;
+  line-height: 28px;
+}
+
+
+/* ................wrapper................. */
+
+.wrapper{
+    width:  100%;
+    background-color: #f1f1f1;
+}
+
+/* ................mySidenav................. */
+
+.topLine{
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+ul{
+	padding-left: 0;
+	display: flex;
+	margin: 3% 7%;
+}
+
+li{
+	list-style: none;
+	font-size: 10px;
+	margin: 0% 3%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    background-color: black;
+    color: white;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* ..................titleBox.................. */
+
+.titleBox{
+    width: 100%;
+    text-align: center;
+}
+
+.title b{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+/* ..............container................. */
+
+.container{
+	width: 100%;
+	padding: 5% 12%;
+}
+
+/* ..............firstColumn................. */
+
+.firstColumn{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+
+/* ..............firstTopic................ */
+
+.firstTopic{
+	width: 20%;
+	padding-top: 3%;
+}
+
+.firstTopic h4{
+	text-align: center;
+	margin-left: 5.5%;
+}
+
+/* ..............firstInfo................ */
+
+.firstInfo{
+	margin-top: 44%;
+	text-align: center;
+	border-top: 1px solid grey;
+	margin-left: 8%;
+}
+
+.firstInfo b{
+	letter-spacing: 0.5px;
+}
+
+/* ..............firstTitle................ */
+
+.firstTitle{
+	width: 80%;
+	padding: 0 2%;
+	padding-top: 3%;
+}
+
+.firstTitle h1{
+	line-height: 14px;
+}
+
+.firstTitle img{
+	width: 97%;
+	margin-top:  4%;
+}
+
+/* ..............secondColumn................. */
+
+.secondColumn{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	padding: 7% 0;
+} 
+
+/* .............secondTopic................. */
+
+.secondTopic{
+	width: 20%;
+	padding-top: 3%;
+	border-top: 1px solid grey;
+	margin-top: 30%;
+	text-align: center;
+}
+
+.secondTopic img{
+	width: 60%;
+}
+
+.secondTopic p{
+	border-top: 1px solid grey;
+}
+
+/* .............secondImgEssay................ */
+
+.secondImgEssay{
+	width: 50%;
+	padding: 0 2%;
+	padding-top: 3%;
+}
+
+.secondImgEssay  img{
+	width: 100%;
+}
+
+/* .............mostViewed................ */
+
+.mostViewed{
+	width: 30%;
+	padding-top: 3%;
+	padding: 0 3%;
+	margin-top: 84%;
+	border-top: 1px solid grey;
+}
+
+.viewedGp{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 5% 0;
+}
+
+.circle{
+	width: 30%;
+	border-radius: 999em;
+}
+
+.viewedGp p{
+	width: 70%;
+	line-height: 16px;
+	padding: 0 6%;
+}
+
+/* .............thirdColumn.............. */
+
+.thirdColumn{
+	width: 100%;
+	background-color: white;
+	padding: 7% 3%;
+}
+
+.thirdColumn img{
+	width: 70%;
+}
+
+.thirdGp{
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+}
+
+.thirdImgEssay{
+	padding: 0 5%;
+}
+
+.thirdImgEssay img{
+	width: 100%;
+}
+
+/* .............lastColumn.............. */
+
+.lastColumn{
+	width: 100%;
+	background-color: white;
+	padding: 7% 3%;
+	border-top: 1px solid grey;
+}
+
+.relatedStories{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 0 2%;
+}
+	
+.relatedStories h2{
+	width: 20%;
+}
+
+.storiesGp{
+	width: 80%;
+}
+
+/* .............lstoriesTop............. */
+
+.storiesTop{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.storiesBox{
+	width: 23%;
+	margin: 0 1%;
+}
+
+.storiesBox img{
+	width: 100%;
+}
+
+/* ............storiesBottom............ */
+
+.storiesBottom{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.storiesBox2{
+	width: 23%;
+	margin: 0 1%;
+}
+
+/*....................footer....................*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: grey;
+    color: white;
+    margin-top: 10%;
+}
+
+/* ul{
+    padding-left: 0;
+}
+
+li{
+    list-style: none;
+    font-size: 10px;
+    margin: 2% 0;
+} */
+
+/* ...............footerFirst.............. */
+
+.footerFirst{
+    width: 24%;
+    display: flex;
+}
+
+.fashion{
+    width: 50%;
+    margin:  0 5%;
+}
+
+.travel{
+    width: 50%;
+    margin:  0 5%;
+}
+
+/* ...............footerSecond.............. */
+
+.footerSecond{
+    width: 24%;
+    display: flex;
+}
+
+.art{
+    width: 50%;
+    margin:  0 5%;
+}
+
+.food{
+    width: 50%;
+    margin:  0 5%;
+}
+
+/* ...............subscribeGp.............. */
+
+/* .subscribeGp{
+    width: 36%;
+    margin:  0 5%;
+} */
+
+/* ...............policyGp.............. */
+
+.policyGp{
+    width: 50%;
+}
+
+.policy{
+    width: 100%;
+    display: flex;
+}
+
+.policy h6{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,406 @@
+*{
+  /*  outline: 1px solid red;   */
+   box-sizing: border-box;
+}
+
+/* ................body................. */
+
+/* 一般都會選擇 small 或 medium為主大小；
+     small約 12px; medium 約 14px;*/
+  
+body{
+  font-size: small;
+  font-family: serif;
+}
+
+h1{
+  /* 12px * 200% 約 24px */
+  font-size: 200%;
+  font-family: serif;
+  text-align: center;
+}
+
+h3{
+  /* 12px * 120% 約 14px  */
+  font-size: 120%;
+}
+
+h5{
+  /* 12px * 120% 約 14px  */
+  font-size: 120%;
+}
+
+h6{
+  /* 12 * 1.5 = 18px  */
+  font-size: 1.5em;
+}
+
+p{
+  /* 12 * 1.5 = 18px  */
+  font-size: 1.5em;
+  line-height: 28px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    /* background-color: #f1f1f1; */
+    padding: 0 5%;
+}
+
+/* ................wrapper................. */
+
+.wrapper{
+    width:  100%;
+   /*  background-color: #f1f1f1; */
+}
+
+/* ................mySidenav................. */
+
+.topLine{
+    background-color: white;
+    color: white;
+    width: 100%;    
+    display: flex;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0,.1);(0, 0, 0,.1);
+}
+
+ ul{ 
+    display: inline-block;
+     margin: auto; 
+     width: 73%;
+     padding-left: 0;
+ } 
+
+ li{
+    display: inline-block;
+    padding:0 2%;
+    font-size: 15px;
+    list-style: none;
+    color: #333;
+    letter-spacing: .15em;
+    font-family: FranklinGothic,Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    background-color:  darkgray;
+    color: white;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*................trendImg................. * */
+
+.trendImg{
+    width: 100%;
+    /* background-color: white; */
+    padding: 3% 0;
+    /* margin: 5% 0; */
+}
+
+/*................trendReport................ * */
+
+.trendReport{
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+    font-size: 300%;
+}
+
+/*...............trendBoxGp............... * */
+
+.trendBoxGp{
+    width: 100%;
+    display: flex;
+}
+
+/*.............trendBox................. * */
+
+.trendBox{
+    width: 25%;
+    margin: 0 1%;
+}
+
+/* /*.................season................ */
+
+.season{
+    width: 100%;
+    background-color: #fff;
+    padding: 6% 3%;
+    margin: 5% 0;
+}
+
+/* /*.................seasonHeader................ */
+
+.seasonHeader{
+    /* padding:  6% 0; */
+    text-align: center;
+}
+
+.seasonHeader h1{
+    font-size: 400%;
+    padding: 0;
+}
+ 
+/* /*...............seasonRows................ */
+
+.seasonRows{
+    width: 100%;
+    padding: 6% 0;
+    background-color: #fff;
+     display: flex;
+    flex-direction: row; 
+}
+
+/* /*...............sesonboxLeft................ */
+
+.sesonboxLeft{
+    width: 30%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latestShows{
+    width: 80%;
+    border: 1px solid grey;
+}
+
+.number{
+    width: 20%;
+    border: 1px solid grey;
+}
+
+.showsGp{
+    width: 100%;
+    border-top: 1px solid grey;
+}
+
+.shows{
+    max-height: 200px;
+    overflow: auto;
+    padding-left: 0;
+}
+
+/* /*...............sesonboxRight................ */
+
+.sesonboxRight{
+    width: 70%;
+}
+
+/* /*...............latestNews................ */
+
+.latestNewsGp{
+    width: 100%;
+    /* padding: 6% 3%;
+    margin: 5% 0; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latestNewsGp h1{
+    width: 100%;
+    font-size: 600%;
+    margin-top: 5%;
+}
+
+.date{
+    text-align: center;
+     width: 100%;
+     font-size: 120%;
+     margin-top: -1%;
+}
+
+/* /*...............news............... */
+
+.news{
+    width: 100%;
+    display: flex;
+}
+
+.borderTop{
+    width: 57%;
+    border-top: 1px solid lightgrey;
+    margin-left: 5%;
+}
+
+/* /*...............newsLeft............... */
+
+.newsLeft{
+    width: 14%;
+    text-align: right;
+    padding: 1% 0;
+    margin: 6% 1%;
+    border-top: 2px solid grey;
+    margin-left: 5%;
+}
+
+/* /*...............newsMiddle............... */
+
+.newsMiddle{
+    width: 25%;
+    margin: 6% 1%;
+}
+
+/* /*..............newsRight.............. */
+
+.newsRight{
+    width: 14%;
+    align-self: center;
+    margin: 6% 1%;
+}
+
+.smallTitle{
+    font-size: 200%;
+}
+
+.resort{
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 10px;
+}
+
+.readMore{
+    padding: 2% 0;
+    font-size: 0.6em;
+}
+
+/*..............fashionPoster..............*/
+
+.fashionPoster{
+    margin: 10% 0;
+}
+
+.fashionPoster h1{
+    font-size: 400%;
+}
+
+/*.......................footerGp..................*/ 
+
+.footerGp{
+    background-color: lightgrey;
+    width: 100%;
+    margin-top: 200px;
+    padding-top: 50px;
+    height: 400px;
+    text-align: center;
+} 
+
+.footerGp h3{
+    width: 100%;
+    font-size: 300%;
+} 
+
+.footerInfo{
+    width: 30%;
+    margin: auto;
+}
+
+.contactLogo{
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+}
+
+.contactLogo img{
+    width: 45%;
+}
+
+.footerGp h4{
+    font-size: 200%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

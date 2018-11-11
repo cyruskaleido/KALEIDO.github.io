@@ -1,0 +1,332 @@
+/* .........collectionBg........ */
+
+.collectionBg{
+	position: relative;
+}
+
+/* .........discover..........*/
+
+.discover{
+	width: 40%;
+	transform:rotate(270deg);
+	margin-left: -270px;
+	margin-top: 100px;
+}
+
+.discoverText{
+	display: inline-block;
+	font-size: 40px;
+	color: grey;
+	margin: 0 30px;
+}
+
+.discoverLine{
+	width: 36%;
+	display: block;
+	margin: 10px 0;
+	display: inline-block;
+	border-top: 2px solid grey;
+}
+
+
+/* .collectionLine{
+	display: inline-block;
+	width: 30%;
+	border-top:  2px solid black;
+	writing-mode: vertical-rl;
+} */
+
+.collectionBg h1{
+	font-size:1200%;
+	color: white;
+	line-height: 95px;
+	position: absolute;
+	top: -6%;
+	bottom: 0;
+	margin-top: 28%;
+	right: 17%;
+	text-indent: -21px;
+}
+
+
+.summer{
+	font-size: 200px;
+	display: block;
+	text-indent: 45px;
+	margin-top: 42px;
+}
+
+/*..........collectionBox........*/
+
+.collectionBox{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 200px 0;
+}
+
+.boxImg{
+	width: 35%;
+	/* padding: 100px; */
+}
+
+/*..........aboutcollection........*/
+
+.aboutCollection{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.aboutImg{
+	width: 45%;
+}
+
+.collectionWords{
+	width: 46%;
+	align-self: center;
+	transform:scale(0.9);
+	margin: 0 auto;
+	margin-left: -100px;
+	background-color: white;
+	box-shadow: 1px 5px 100px;
+	text-align: center;
+	padding: 90px 50px; 
+}
+
+.collectionWords h1{
+	font-size: 450%;
+	letter-spacing: 2px;
+}
+
+.collectionWords p{
+	margin: 30px 0;
+}
+
+/*..........aboutSecondImg.........*/
+
+.aboutSecondImg{
+	width: 50%;
+	margin-left: 600px;
+	margin-top: -5px;
+}
+
+/*..........aboutThirdImg.......*/
+
+.aboutThirdImg{
+	width: 100%;
+	position: relative;
+}
+
+.thirdImgWords{
+	position: absolute;
+	width: 40%;
+	top: 40%;
+	left: 5%;
+	padding: 100px 120px;
+	background-color: white;
+	box-shadow: 1px 5px 100px;
+}
+
+
+.thirdImg{
+	width: 90%;
+	margin-left: 200px;
+	margin-top: -5px;
+}
+
+.thirdImgWords h1{
+	font-size: 60px;
+	text-indent: -43px;
+	line-height: 10px;
+}
+
+.thirdImgWords span{
+	font-size: 60px; 
+}
+
+
+.thirdImgWords p{
+	padding: 10px 0;
+	font-size: 20px;
+	text-align: left;
+}
+
+/*.........shopTheCollection........*/
+
+.shopTheCollection{
+	width: 100%;
+	margin: 150px 0;
+	margin-left: 200px;
+}
+
+.shopTitle{
+	width: 100%;
+	margin:  140px 0;
+}
+
+.shopTitle span{
+	font-size: 60px;
+}
+
+.shopLineText{
+	display: inline-block;
+}
+
+.shopLine{
+	width: 40%;
+	display: inline-block;
+	margin: 10px 0;
+	border-bottom: 1px solid lightgrey;
+	/* opacity: 1; */
+}
+
+.shopBox{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.shopBoxInfo{
+	width: 31%;
+	margin: 0 13px;
+}
+
+.shopBoxImg{
+	width: 100%;
+}
+
+.boxInfo{
+	width: 100%;
+	text-align: center;
+	margin:  40px 0;
+}
+
+.boxInfo a{
+	line-height: 45px;
+}
+
+/*.........fullCollection........*/
+
+.fullCollection{
+	width: 100%;
+	text-align: center;
+}
+
+.collectionLine{
+	display:block;
+	width: 25%;
+	border-top: 2px solid lightgrey;
+	margin:  0 auto;
+	padding: 7px 0;
+	opacity: 0.5;
+}
+
+.collectionLine2{
+	display:block;
+	width: 25%;
+	border-bottom: 2px solid lightgrey;
+	margin:  0 auto;
+	padding: 7px 0;
+	opacity: 0.5;
+}
+
+.collectionText{
+	font-size: 35px;
+	font-weight: 200;
+	padding: 10px 0;
+	font-family: serif;
+}
+
+/*........ourIdentityBigGp.........*/
+
+.ourIdentityBigGp{
+	background-color: #efebe9;
+	display: flex;
+	color: grey;
+	padding:  190px 110px;
+	margin: 510px 0;
+}
+
+.ourIdentityBox1{
+	width: 30%;
+}
+
+.ourIdentityBox{
+	width: 100%;
+	display: flex;
+}
+
+/*........identityGp........*/
+
+.identityGp{
+  width: 50%;
+}
+
+/*........identity.........*/
+
+.identity{
+  width: 100%;
+}
+
+.line{
+  display: block;
+  width: 10%;
+  padding: 5px 0;
+  margin-left: -45px;
+  border-top: 2px solid grey;
+}
+
+.identity span{
+	font-size: 27px;
+}
+
+.identityText{
+	margin-left: 29px;
+}
+
+/* ...............behindTheBrand....... */
+
+.behindTheBrand{
+	width: 100%;
+	padding: 70px 0;
+}
+
+.behindTheBrand h3{
+	font-size: 60px;
+}
+
+.behindTheBrand span{
+	display: block;
+	text-indent: 80px;
+	font-size: 70px;
+}
+
+.identityGp p{
+	width: 80%;
+	margin-left: 85px;
+	line-height: 48px;
+	padding-bottom: 45px;
+	text-align: left;
+}
+
+.identityGp a{
+	margin-left: 85px;
+}
+
+.BrandLine{
+	display: block;
+	width: 26%;
+	margin: 8px 0;
+	margin-left: -45px;
+	border-top: 2px solid grey;
+}
+
+/* ........identityImg..... */
+
+.identityImg{
+	width: 70%;
+	align-self: center;
+}
